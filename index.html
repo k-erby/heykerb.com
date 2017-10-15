@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Basic Page Needs
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<head>
+    <meta charset="utf-8">
+    <title>KERB</title>
+    <meta name="description" content="Quick, personal website.">
+    <meta name="author" content="Kaitlin Erb">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/animations.css">
+
+    <!-- Map GL Javascript Files -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css' rel='stylesheet' />
+    
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+    
+</head>
+
+<!-- Basic Page Needs End
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<body id = "grad">
+    <main class="flex _direction-column container">
+        <header class="flex _space-between">
+            <div><span>Kaitlin Erb</span></div>
+
+            <nav>
+                <a href="/404.html" target="_blank">work</a>
+                <a href="" a href="mailto:cmykaitlin@gmail.com" target="_blank">contact</a>
+            </nav>
+        </header>
+    
+        <h1>My favourite chips are <a href="http://a.co/cwkQyoO" target="_blank" id="hidden_link">Ruffles Baked Cheddar & Sour Cream</a>. Also, I love coding and web design.</h1>
+        
+        <section class = "first-section flex _direction-column">
+            <figure class = "question-container flexbox-row">
+                <p class = "who-is">WHO IS</p>
+                <p class = "kaitlin">  KAITLIN</p>
+                <p class = "erb">ERB ?</p>
+            </figure>
+
+            <article class = "about-container">
+            <h2>Some Details About Me</h2>
+            <p class = "personal-info">
+                Lorem Ipsum is simply dummy text of the printing and typesetting 
+                industry. Lorem Ipsum has been the industry's standard dummy text 
+                ever since the 1500s, when an unknown printer took a galley of 
+                type and scrambled it to make a type specimen book. It has survived 
+                not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged. It was popularised 
+                in the 1960s with the release of Letraset sheets containing 
+                Lorem Ipsum passages, and more recently with desktop publishing 
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            </article>
+        </section>
+            
+
+        <section class="work-container flex _justify-center">
+            <div class="claims _justify-center">
+                <img src="/imgs/quotation_marks.svg" id = "quotation-marks">
+                <p id="testimonial-text"></p>
+                <p id="testimonial-person"></p>
+                <a class="button" href="#" onclick="onGetTestimonialClick(event)">CLICK FOR A TESTIMONIAL</a>
+            </div>
+        </section>
+
+        
+        <footer class = "flex _space-between _direction-row footer">
+            <section class = "jodie-foster-me">
+                <h2>contact me:</h2>
+                <p>facebook</p>
+                <p>instagram</p>
+                <p>github</p>
+                <p>email</p>
+            </section>
+            <div class = "flex _space-between _direction-row">
+                <div id='map'></div>
+                <script>
+                mapboxgl.accessToken = 'pk.eyJ1IjoiY215a2VyYiIsImEiOiJjajhhb3M4ajQwamNpMndxbGNwN2RpOHQ2In0.k3_T60lH3d2cE4hlVOQX2g';
+                var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/cmykerb/cj8dkjrfi99b62rl2ej7u3524',
+                center: [-123.367, 48.412],
+                zoom: 11
+                });
+                </script>
+            </div>
+            <section class = "jodie-foster-others">
+                <h2>or cooler people:</h2>
+                <p>amy</p>
+                <p>dom</p>
+                <p>laura</p>
+                <p>heather</p>
+            </section>
+        </footer>
+    </main>
+
+<!-- JS links & Bottom Tags
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="apps/testimonials.js"></script>
+</body>
+</html>

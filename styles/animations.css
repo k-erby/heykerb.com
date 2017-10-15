@@ -1,0 +1,28 @@
+#slide2 {
+    right: 1000px;
+    position: relative;
+    -webkit-animation: slide2 1.2s forwards;
+    -webkit-animation-delay: .43s;
+    animation: slide2 1.2s forwards;
+    animation-delay: .43s;
+}
+
+@-webkit-keyframes slide2 {
+    100% { right: 0; }
+}
+
+@keyframes slide2 {
+    100% { right: 0; }
+}
+
+@-webkit-keyframes fadeup {
+    0%     { opacity: 0; -webkit-transform: translate(0px, 20px);}
+}
+
+@-moz-keyframes fadeup {
+    0%     { opacity: 0; -moz-transform: translate(0px, 20px);}
+}
+
+@keyframes fadeup {
+    0%    { opacity: 0; transform: translate(0px, 20px);}
+}
