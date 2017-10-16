@@ -1,0 +1,52 @@
+
+/* -------------------------------------------
+				Flexbox Basics
+------------------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.flex {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+._space-between {
+	justify-content: space-between;
+}
+
+._direction-column {
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+
+._direction-row {
+	-webkit-flex-direction: row;
+	flex-direction: row;
+}
+
+._justify-center {
+	justify-content: center;
+}
+
+.flexbox-row {
+	display: flex;
+	height: 100%;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 20px;
+	min-width: 300px;
+	max-width: 1000px;
+	animation: fadeup 1.5s;
+	-webkit-animation: fadeup 1.5s;
+	-moz-animation: fadeup 1.5s;
+}
