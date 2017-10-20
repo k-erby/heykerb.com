@@ -1,0 +1,321 @@
+/* -------------------------------------------
+	--------------------------------------
+				Main index
+	--------------------------------------			   
+------------------------------------------- */
+
+
+
+
+/* -------------------------------------------
+				Flexbox Basics
+------------------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.flex {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+._space-between {
+	justify-content: space-between;
+}
+
+._direction-column {
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+
+._direction-row {
+	-webkit-flex-direction: row;
+	flex-direction: row;
+}
+
+._justify-center {
+	justify-content: center;
+}
+
+.flexbox-row {
+	display: flex;
+	height: 100%;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 20px;
+	min-width: 300px;
+	max-width: 1000px;
+	animation: fadeup 1.5s;
+	-webkit-animation: fadeup 1.5s;
+	-moz-animation: fadeup 1.5s;
+}
+
+
+/* -------------------------------------------
+	--------------------------------------
+				Dev Index Starts
+	--------------------------------------			   
+------------------------------------------- */
+
+/* -------------------------------------------
+				Main Container 
+------------------------------------------- */
+body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Playfair Display', serif;
+}
+
+#grad {
+	background: #462540;  /* if blend doesn't work */
+	background: -moz-linear-gradient(top, #462540 30%, #722F40 100%), url('/imgs/eye.png') repeat;
+	background: -webkit-linear-gradient(top, #462540 30%, #85092A 100%), url('/imgs/eye.png') repeat;
+	background: -o-linear-gradient(top, #462540 30%, #85092A 100%), url('/imgs/eye.png') repeat;
+	background: -ms-linear-gradient(top, #462540 30%, #85092A 100%), url('/imgs/eye.png') repeat;
+	background: linear-gradient(to bottom, #462540 30%, #85092A 100%), url('/imgs/eye.png') repeat;
+	background-blend-mode: multiply;
+}
+
+p {
+	color: #faf5e7;
+}
+
+/* -------------------------------------------
+			Header and Nav Bar 
+------------------------------------------- */
+header {
+	font-family: 'Raleway', 300;
+	padding: 50px 0;
+	font-size: 1.2em;
+}
+
+header a {
+	letter-spacing: 1px;
+	padding: 0 10px;
+	text-decoration: none;
+	color:#faf5e7;
+	font-weight: 300;
+}
+
+/* added hover effects from footer here */
+header a:hover,
+.jodie-foster-me p:hover,
+.jodie-foster-others p:hover {
+	text-decoration: line-through;
+	cursor: pointer;
+	color: #EBC36D;
+}
+
+header span {
+	letter-spacing: 1px;
+	color: #faf5e7;
+	font-weight: 600;
+}
+
+h1 {
+	padding: 100px 0px;
+	max-width: 600px;
+	line-height: 1.5;
+	font-size: 2.3em;
+	font-weight: 600;
+	color: #faf5e7;
+}
+
+#hidden_link {
+	text-decoration: none;
+	color: #faf5e7;
+	cursor: help;
+}
+
+/* -------------------------------------------
+		Figure Container & Info section 
+------------------------------------------- */
+.question-container {
+	margin: auto;
+	padding-top: 100px;
+	flex-wrap: wrap;
+	width: 400px;
+}
+
+.question-container .who-is,
+.question-container .kaitlin,
+.question-container .erb {
+	font-family: 'Raleway';
+	color: #EBC36D;
+	font-size: 4em;
+	justify-content: space-between;
+	transform: rotate(10deg);
+	opacity: 0.4;
+	filter: blur(3px);
+	
+}
+
+.question-container .who-is {
+	margin: 0px;
+}
+
+.question-container .kaitlin {
+	margin: 0px;
+	padding-left: 100px;
+}
+
+.question-container .erb {
+	margin: 0px;
+	margin-top: 0px;
+}
+
+/* -------------------------------------------
+	   About Container & Work Container 
+------------------------------------------- */
+.about-container,
+.where-container {
+	margin-top: -25px;
+}
+
+.personal-info {
+	line-height: 1.3em;
+}
+
+.work-container {
+	padding-top: 100px;
+	margin: 0;
+	list-style: none;
+	width: 
+	
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+h2 {
+	padding: 40px 0px 20px 0px;
+	justify-content: right;
+	font-family: 'Raleway';
+	color: #faf5e7;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.work-container p {
+    padding: 15px 0 150px 0;
+	line-height: 1.8;
+	text-align: justify; 
+	text-justify: auto;
+	width: auto;
+}
+
+#quotation-marks {
+	width: 100vw;
+	opacity: 0.3;
+	filter: blur(3px);
+	margin-bottom: -6em;
+}
+
+.claims {
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+
+	width: 600px;
+	margin: auto;
+}
+
+#testimonial-text,
+#testimonial-person {
+	padding: 10px 0;
+	width: auto;
+	margin: auto;
+}
+
+
+/* -------------------------------------------
+	   Footer & Map & Contact Things
+------------------------------------------- */
+.footer {
+	padding-top: 100px;
+	position: block;
+	clear: both;
+}
+
+#map {
+	margin-bottom: -20em;
+	width: 40em;
+	height: 40em;
+	border-radius: 100%;
+	opacity: 0.9;
+	border-style: solid;
+	border-color: #faf5e7;
+	border-width: medium;
+}
+
+.jodie-foster-others p {
+	text-align: right;
+}
+
+/* -------------------------------------------
+	--------------------------------------
+				Media Queries
+	--------------------------------------			   
+------------------------------------------- */
+@media (max-width: 500px) {
+	h1 { font-size: 1.45em;}
+	header { font-size: 1.1em;}
+	.work-container h2 { padding-top: 1px; }
+
+
+	.question-container .who-is,
+	.question-container .kaitlin,
+	.question-container .erb {
+		font-size: 2.4em;
+		width: 300px;
+	}
+
+	.question-container {
+		padding: 10px 0px 0px 20px;
+		margin-left: 4em;
+		margin-top: 2em;
+		filter: blur(1px);
+	}
+
+	.question-container .who-is,
+	.question-container .where-is {
+		margin: 5px;
+		order: 1;
+	}
+
+	.question-container .kaitlin {
+		margin: 10px;
+		padding-left: 50px;
+		order: 2;
+	}
+	
+	.question-container .erb {
+		margin: 25px;
+		order: 3;
+	}
+
+	#quotation-marks {
+		opacity: 0.4;
+		filter: blur(2px);
+		margin-bottom: -2.4em;
+	}
+
+	.claims {
+		width: 300px;
+	}
+
+	#map {
+		width: 300px;
+	}
+
+	
+}
