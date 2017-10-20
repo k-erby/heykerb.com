@@ -146,31 +146,37 @@ h1 {
 	width: 400px;
 }
 
+.first-section {
+	position: relative;
+	text-align: center;
+	margin: 6em;
+}
+
 .question-container .who-is,
 .question-container .kaitlin,
 .question-container .erb {
 	font-family: 'Raleway';
 	color: #EBC36D;
 	font-size: 4em;
-	justify-content: space-between;
 	transform: rotate(10deg);
 	opacity: 0.4;
 	filter: blur(3px);
-	
+	position: absolute;
+
+	text-align: center;
 }
 
 .question-container .who-is {
-	margin: 0px;
+	top: 0px;
 }
 
 .question-container .kaitlin {
-	margin: 0px;
-	padding-left: 100px;
+	top: 30px;
+	left: -5px;
 }
 
 .question-container .erb {
-	margin: 0px;
-	margin-top: 0px;
+	top: 100px;
 }
 
 /* -------------------------------------------
@@ -189,7 +195,6 @@ h1 {
 	padding-top: 100px;
 	margin: 0;
 	list-style: none;
-	width: 
 	
 	flex-flow: row wrap;
 	justify-content: space-around;
