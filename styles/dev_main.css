@@ -162,17 +162,15 @@ h1 {
 	opacity: 0.4;
 	filter: blur(3px);
 	position: absolute;
-
-	text-align: center;
 }
 
 .question-container .who-is {
-	top: 0px;
+	top: -40px;
 }
 
 .question-container .kaitlin {
 	top: 30px;
-	left: -5px;
+	left: 200px;
 }
 
 .question-container .erb {
@@ -319,7 +317,7 @@ h2 {
 	}
 
 	#map {
-		width: 300px;
+		display: none;
 	}
 
 	
