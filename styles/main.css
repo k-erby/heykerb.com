@@ -82,7 +82,8 @@ strong {
 .art-website {
     float: right;
     width: 50vw;
-    height: 100vh;
+	height: 100vh;
+	background: #FFF;
 }
 
 .code-title, .art-title {

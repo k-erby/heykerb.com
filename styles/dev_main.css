@@ -149,7 +149,7 @@ h1 {
 .first-section {
 	position: relative;
 	text-align: center;
-	margin: 6em;
+	margin: 6em 0;
 }
 
 .question-container .who-is,
@@ -159,7 +159,7 @@ h1 {
 	color: #EBC36D;
 	font-size: 4em;
 	transform: rotate(10deg);
-	opacity: 0.4;
+	opacity: 0.2;
 	filter: blur(3px);
 	position: absolute;
 }
@@ -182,7 +182,8 @@ h1 {
 ------------------------------------------- */
 .about-container,
 .where-container {
-	margin-top: -25px;
+	margin-top: -20px;
+	width: auto;
 }
 
 .personal-info {
@@ -279,31 +280,28 @@ h2 {
 	.question-container .kaitlin,
 	.question-container .erb {
 		font-size: 2.4em;
-		width: 300px;
+		width: 200px;
 	}
 
 	.question-container {
-		padding: 10px 0px 0px 20px;
-		margin-left: 4em;
-		margin-top: 2em;
+		width: 300px;
 		filter: blur(1px);
+		opacity: 1;
 	}
 
-	.question-container .who-is,
-	.question-container .where-is {
-		margin: 5px;
-		order: 1;
+	.question-container .who-is {
+		top: -0.1em;
+		left: -1em;
 	}
-
+	
 	.question-container .kaitlin {
-		margin: 10px;
-		padding-left: 50px;
-		order: 2;
+		top: 1.4em;
+		left: -0em;
 	}
 	
 	.question-container .erb {
-		margin: 25px;
-		order: 3;
+		top: 3em;
+		left: -2em;
 	}
 
 	#quotation-marks {
