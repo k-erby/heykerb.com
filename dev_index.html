@@ -60,20 +60,29 @@
 
             <article class = "about-container">
             <h2>Who is Kaitlin Erb?</h2>
-            <p class = "personal-info">
-                I'm a developer based out of Victoria, BC. 
+                <p class = "personal-info">
+                    I'm a <mark>developer</mark> based out of Victoria, BC. I practise failing fast, so while 
+                    my current skillset is mostly frontend, I'm always looking for cool backend things
+                    to <strike>be bad at</strike> learn about. <mark>Don't know what to say to me? Here are things to 
+                    get me talking:</mark> cats, craft beer labels, user experience, whether or
+                    not you think <em>The Orville</em> is better than <em>Star Trek: Discovery</em>.
 
-                If you are like me and feel that you are an exceptionally awkward 
-                human being, here are things to talk to me about: cats, black olives (spoiler: I hate them), 
-                accessment in education, my feeling like I don't understand JS despite 
-                having gone to two conferences on it.
-            </p>
+                    <!-- Also, if you're like, "Oh geez, Kaitlin, this site looks horrible. Yuck"
+                    It's because I'm fiddling around with new HTML/CSS things that I'm learning
+                    or practising. Probably. -->
+                </p>
             </article>
         </section>
 
-        <section class="work-container flex _justify-center">
+        <section class="work-container flex _justify-center _direction-column">
+            <article class = "previous-works flex _direction-row">
+                    <div><span>work thing 1</span></div>
+                    <div><span>work thing 2</span></div>
+                    <div><span>work thing 3</span></div>
+            </article>
+
             <div class="claims _justify-center">
-                <img src="/imgs/quotation_marks.svg" id = "quotation-marks">
+                <h2>I don't trust you, Kaitlin, what do others say?</h2>
                 <p id="testimonial-text"></p>
                 <p id="testimonial-person"></p>
                 <a class="button" href="#" onclick="onGetTestimonialClick(event)">CLICK FOR A TESTIMONIAL</a>
@@ -102,11 +111,11 @@
                 </script>
             </div>
             <section class = "jodie-foster-others">
-                <h2>or cooler people:</h2>
-                <p>amy</p>
-                <p>dom</p>
-                <p>laura</p>
-                <p>heather</p>
+                <h2>or <mark>cooler</mark> people:</h2>
+                <p>UVic WebDev</p>
+                <p>Brandon</p>
+                <p>Heather</p>
+                <p>Amy</p>
             </section>
         </footer>
     </main>

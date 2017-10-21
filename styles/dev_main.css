@@ -59,13 +59,6 @@
 	-moz-animation: fadeup 1.5s;
 }
 
-
-/* -------------------------------------------
-	--------------------------------------
-				Dev Index Starts
-	--------------------------------------			   
-------------------------------------------- */
-
 /* -------------------------------------------
 				Main Container 
 ------------------------------------------- */
@@ -89,18 +82,23 @@ p {
 	color: #faf5e7;
 }
 
+mark {
+	color: #EBC36D;
+	background-color: transparent;
+}
+
 /* -------------------------------------------
 			Header and Nav Bar 
 ------------------------------------------- */
 header {
 	font-family: 'Raleway', 300;
-	padding: 50px 0;
+	padding: 2em 0;
 	font-size: 1.2em;
 }
 
 header a {
 	letter-spacing: 1px;
-	padding: 0 10px;
+	padding: 0 0.5em;
 	text-decoration: none;
 	color:#faf5e7;
 	font-weight: 300;
@@ -122,7 +120,7 @@ header span {
 }
 
 h1 {
-	padding: 100px 0px;
+	padding: 4.5em 0 3em 0;
 	max-width: 600px;
 	line-height: 1.5;
 	font-size: 2.3em;
@@ -140,16 +138,18 @@ h1 {
 		Figure Container & Info section 
 ------------------------------------------- */
 .question-container {
-	margin: auto;
+	margin-top: 2em;
 	padding-top: 100px;
 	flex-wrap: wrap;
 	width: 400px;
+	position: relative;
+	text-align: center;
 }
 
 .first-section {
-	position: relative;
 	text-align: center;
-	margin: 6em;
+	word-spacing: .2em;	
+	margin: 6em 4em 0;
 }
 
 .question-container .who-is,
@@ -159,8 +159,8 @@ h1 {
 	color: #EBC36D;
 	font-size: 4em;
 	transform: rotate(10deg);
-	opacity: 0.4;
-	filter: blur(3px);
+	opacity: 0.3;
+	filter: blur(5px);
 	position: absolute;
 }
 
@@ -169,7 +169,7 @@ h1 {
 }
 
 .question-container .kaitlin {
-	top: 30px;
+	top: 40px;
 	left: 200px;
 }
 
@@ -180,21 +180,14 @@ h1 {
 /* -------------------------------------------
 	   About Container & Work Container 
 ------------------------------------------- */
-.about-container,
-.where-container {
-	margin-top: -25px;
-}
-
 .personal-info {
-	line-height: 1.3em;
+	line-height: 1.5em;
 }
 
 .work-container {
 	padding-top: 100px;
 	margin: 0;
 	list-style: none;
-	
-	flex-flow: row wrap;
 	justify-content: space-around;
 }
 
@@ -223,12 +216,8 @@ h2 {
 }
 
 .claims {
-	-webkit-align-items: center;
-	align-items: center;
-	-webkit-justify-content: center;
-	justify-content: center;
-
 	width: 600px;
+	height: 300px;
 	margin: auto;
 }
 
@@ -270,40 +259,48 @@ h2 {
 	--------------------------------------			   
 ------------------------------------------- */
 @media (max-width: 500px) {
-	h1 { font-size: 1.45em;}
+	h1 { font-size: 1.6em;
+		padding-bottom: 70px;}
+	h2 { padding: 1em 0 1.1em 0;}
 	header { font-size: 1.1em;}
 	.work-container h2 { padding-top: 1px; }
+	
+	.personal-info {
+		line-height: 1.7em;
+		text-align: justify;
+		text-justify: kashida;
+	}
 
+	.first-section {
+		position: relative;
+		text-align: center;
+		margin: 4em 2em 0;
+	}
+
+	.question-container {
+		width: 300px;
+	}
 
 	.question-container .who-is,
 	.question-container .kaitlin,
 	.question-container .erb {
 		font-size: 2.4em;
-		width: 300px;
+		width: 200px;
 	}
 
-	.question-container {
-		padding: 10px 0px 0px 20px;
-		margin-left: 4em;
-		margin-top: 2em;
-		filter: blur(1px);
+	.question-container .who-is {
+		top: -0.1em;
+		left: -1em;
 	}
-
-	.question-container .who-is,
-	.question-container .where-is {
-		margin: 5px;
-		order: 1;
-	}
-
+	
 	.question-container .kaitlin {
-		margin: 10px;
-		padding-left: 50px;
-		order: 2;
+		top: 1.4em;
+		left: -0em;
 	}
 	
 	.question-container .erb {
-		margin: 25px;
-		order: 3;
+		top: 3em;
+		left: -2em;
 	}
 
 	#quotation-marks {
