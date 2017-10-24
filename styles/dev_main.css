@@ -70,7 +70,7 @@ body {
 
 #grad {
 	background: #462540;  /* if blend doesn't work */
-	background: -moz-linear-gradient(top, #462540 30%, #722F40 100%), url('/imgs/eye.png') repeat;
+	background: -moz-linear-gradient(top, #462540 30%, #85092A 100%), url('/imgs/eye.png') repeat;
 	background: -webkit-linear-gradient(top, #462540 30%, #85092A 100%), url('/imgs/eye.png') repeat;
 	background: -o-linear-gradient(top, #462540 30%, #85092A 100%), url('/imgs/eye.png') repeat;
 	background: -ms-linear-gradient(top, #462540 30%, #85092A 100%), url('/imgs/eye.png') repeat;
@@ -105,9 +105,7 @@ header a {
 }
 
 /* added hover effects from footer here */
-header a:hover,
-.jodie-foster-me p:hover,
-.jodie-foster-others p:hover {
+header a:hover {
 	text-decoration: line-through;
 	cursor: pointer;
 	color: #EBC36D;
@@ -219,21 +217,43 @@ h2 {
 	width: 600px;
 	height: 300px;
 	margin: auto;
+	padding: 3em 0;
+	text-align: center;
 }
 
-#testimonial-text,
-#testimonial-person {
+#testimonial-text {
+	line-height: 1.2em;
 	padding: 10px 0;
-	width: auto;
-	margin: auto;
+	text-align: center;
 }
 
+#testimonial-person {
+	padding: 2em 0 2em 0;
+	text-align: center;
+}
+
+.button { 
+	color: #FFF;
+	border: 1px solid #FFF;
+	background-color: transparent;
+	font-family: 'Raleway';
+	text-decoration: none;
+	border-radius: 0.5em;
+	padding: 0.8em;
+}
+
+.button:hover{
+	color: #EBC36D;
+	border: 1px solid #EBC36D;
+	background-color: transparent;
+	box-shadow: 2px 1px #EBC36D;
+}
 
 /* -------------------------------------------
 	   Footer & Map & Contact Things
 ------------------------------------------- */
 .footer {
-	padding-top: 100px;
+	padding-top: 10em;
 	position: block;
 	clear: both;
 }
@@ -249,8 +269,23 @@ h2 {
 	border-width: medium;
 }
 
-.jodie-foster-others p {
+.jodie-foster-others a {
 	text-align: right;
+}
+
+.jodie-foster-me a,
+.jodie-foster-others a {
+	letter-spacing: 1px;
+	text-decoration: none;
+	color:#faf5e7;
+	font-weight: 300;
+}
+
+.jodie-foster-me a:hover,
+.jodie-foster-others a:hover {
+	text-decoration: line-through;
+	cursor: pointer;
+	color: #EBC36D;
 }
 
 /* -------------------------------------------
