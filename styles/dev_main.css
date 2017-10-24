@@ -230,6 +230,7 @@ h2 {
 #testimonial-person {
 	padding: 2em 0 2em 0;
 	text-align: center;
+	color: #EBC36D;
 }
 
 .button { 
@@ -243,7 +244,6 @@ h2 {
 }
 
 .button:hover{
-	color: #EBC36D;
 	border: 1px solid #EBC36D;
 	background-color: transparent;
 	box-shadow: 2px 1px #EBC36D;
@@ -253,23 +253,35 @@ h2 {
 	   Footer & Map & Contact Things
 ------------------------------------------- */
 .footer {
-	padding-top: 10em;
+	padding-top: 13em;
 	position: block;
 	clear: both;
+	justify-content: space-between;
 }
 
 #map {
 	margin-bottom: -20em;
 	width: 40em;
 	height: 40em;
-	border-radius: 100%;
+	border-top-left-radius: 40em;
+	border-top-right-radius: 40em;
+
 	opacity: 0.9;
 	border-style: solid;
 	border-color: #faf5e7;
 	border-width: medium;
 }
 
+.jodie-foster-others,
+.jodie-foster-me {
+	padding-bottom: 2em;
+}
+
 .jodie-foster-others a {
+	float: right;
+}
+
+.jodie-foster-others p {
 	text-align: right;
 }
 
@@ -293,6 +305,11 @@ h2 {
 				Media Queries
 	--------------------------------------			   
 ------------------------------------------- */
+@media (max-width: 700px) {
+	.claims {
+		width: 450px;
+	}
+}
 @media (max-width: 500px) {
 	h1 { font-size: 1.6em;
 		padding-bottom: 70px;}
