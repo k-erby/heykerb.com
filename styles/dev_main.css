@@ -94,14 +94,15 @@ header {
 	font-family: 'Raleway', 300;
 	padding: 2em 0;
 	font-size: 1.2em;
+	color: #FFF;
 }
 
 header a {
 	letter-spacing: 1px;
 	padding: 0 0.5em;
 	text-decoration: none;
-	color:#faf5e7;
 	font-weight: 300;
+	color: #FFF;
 }
 
 /* added hover effects from footer here */
@@ -113,7 +114,7 @@ header a:hover {
 
 header span {
 	letter-spacing: 1px;
-	color: #faf5e7;
+	color: #FFF;
 	font-weight: 600;
 }
 
@@ -270,6 +271,8 @@ h2 {
 	border-style: solid;
 	border-color: #faf5e7;
 	border-width: medium;
+
+	overflow: hidden;
 }
 
 .jodie-foster-others,
