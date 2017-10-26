@@ -13,12 +13,14 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <!-- Stylesheets -->
+    <!-- Stylesheets
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="stylesheet" type="text/css" href="styles/dev_main.css">
     <link rel="stylesheet" type="text/css" href="styles/animations.css">
 
-    <!-- Map GL Javascript Files -->
+    <!-- Map GL Javascript Files
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css' rel='stylesheet' />
 
@@ -32,6 +34,8 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <body id = "grad">
     <main class="_direction-column container">
+
+        <!-- Nav bar and span -->
         <header class="flex _space-between">
             <div><span>Kaitlin Erb</span></div>
 
@@ -42,41 +46,39 @@
             </nav>
         </header>
     
+        <!-- Tagline -->
         <h1>My favourite chips are <a href="http://a.co/cwkQyoO" target="_blank" id="hidden_link">Ruffles Baked Cheddar & Sour Cream</a>. Also, I love coding and web design.</h1>
         
-        <section class = "first-section _justify-center">
-            <figure class = "question-container flexbox-row _justify-center">
+        <!-- About Me Section -->
+        <section class = "first-section">
+            <figure class = "question-container flex _direction-row _justify-center">
                 <p class = "who-is">WHO IS</p>
                 <p class = "kaitlin">  KAITLIN</p>
                 <p class = "erb">ERB ?</p>
             </figure>
 
             <article class = "about-container">
-            <h2>Who is Kaitlin Erb?</h2>
+                <h2>Who is Kaitlin Erb?</h2>
                 <p class = "personal-info">
                     I'm a <mark>developer</mark> based out of Victoria, BC. I practise failing fast, so while 
                     my current skillset is mostly frontend, I'm always looking for cool backend things
                     to <strike>be bad at</strike> learn about. <mark>Don't know what to say to me? Here are things to 
                     get me talking:</mark> cats, craft beer labels, user experience, whether or
                     not you think <em>The Orville</em> is better than <em>Star Trek: Discovery</em>.
-
-                    <!-- Also, if you're like, "Oh geez, Kaitlin, this site looks horrible. Yuck"
-                    It's because I'm fiddling around with new HTML/CSS things that I'm learning
-                    or practising. Probably. -->
-
                 </p>
             </article>
         </section>
 
         <!-- TODO: add code projects -->
-        <section class="work-container flex _justify-center _direction-column">
+        <section class="work-container flex _direction-column _justify-center">
             <article class = "previous-works flex _direction-row">
                     <!-- <div><span>work thing 1</span></div>
                     <div><span>work thing 2</span></div>
                     <div><span>work thing 3</span></div> -->
             </article>
 
-            <div class="claims _justify-center">
+            <!-- TODO: Move this into its own section -->
+            <div class="claims">
                 <h2>What do other people say?</h2>
                 <p id="testimonial-text"></p>
                 <p id="testimonial-person"></p>
@@ -84,6 +86,7 @@
             </div>
         </section>
 
+        <!-- Contact -->
         <footer class = "flex _space-between _direction-row footer">
             <!-- TODO: add links here -->
             <section class = "jodie-foster-me">
@@ -93,8 +96,11 @@
                 <p href="https://github.com/k-erby/" target="_blank">github</p>
                 <p href="mailto:cmykaitlin@gmail.com?Subject=Hello%20KERB" target="_blank">email</p>
             </section>
+
+            <!-- Adds Mapbox to show where I am-->
             <div class = "flex _space-between _direction-row">
                 <div id='map'></div>
+                <!-- REMINDER: Lat&Long are reversed in Mapbox -->
                 <script>
                 mapboxgl.accessToken = 'pk.eyJ1IjoiY215a2VyYiIsImEiOiJjajhhb3M4ajQwamNpMndxbGNwN2RpOHQ2In0.k3_T60lH3d2cE4hlVOQX2g';
                 var map = new mapboxgl.Map({
@@ -105,6 +111,7 @@
                 });
                 </script>
             </div>
+
             <!-- TODO: add links here -->
             <section class = "jodie-foster-others">
                 <h2>or <mark>cooler</mark> people:</h2>
