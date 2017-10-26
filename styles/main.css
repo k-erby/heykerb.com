@@ -5,6 +5,7 @@
 ------------------------------------------- */
 
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
 
 /* -------------------------------------------
 				Flexbox Basics
@@ -89,19 +90,26 @@ strong {
     text-align: center;
     height: 50vh;
     font-size: 4em;
-	margin-top: 4em;
-	margin-bottom: -3em;
+	margin: 4em 0 -3em 0;
 }
 
 .code-title, .code-para {
     font-family: 'Raleway', sans-serif;
 	color: #FFF;
-	padding-top: .14em;  /* places the text in Raleway at the same level os the art side.*/
+	padding-top: .28em;
 }
 
 .art-title, .art-para {
-    font-family: 'Playfair Display', serif;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
 	color: #462540;
+}
+
+.art-title {
+	font-size: 4.3em;
+}
+
+.art-para {
+	font-size: 1.23em;
 }
 
 p {

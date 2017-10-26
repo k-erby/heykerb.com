@@ -4,8 +4,6 @@
 	--------------------------------------			   
 ------------------------------------------- */
 
-
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
 @import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
 
 .container {
@@ -30,7 +28,6 @@ body {
 }
 
 header {
-	font-family: 'Yanone Kaffeesatz', sans-serif;
 	padding: 2em 0;
 	font-size: 1.3em;
 }
@@ -39,18 +36,18 @@ header a {
 	letter-spacing: 1px;
 	padding: 0 0.5em;
 	text-decoration: none;
-	color:#000;
+	color: #462540;
 	font-weight: 300;
 }
 
 header a:hover {
-	text-decoration: line-through;
+	text-decoration: underline;
 	cursor: pointer;
 }
 
 header span {
 	letter-spacing: 1px;
-	color: #000;
+	color: #462540;
 	font-weight: 600;
 }
 
@@ -65,21 +62,26 @@ h1 {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 6.4em;
 	font-weight: 200;
-	color: #000;
+	color: #462540;
 	margin-top: -3.2em;
 }
 
+.plzwork {
+	padding: 10em 0 10em 0;
+	font-size: 1.15em;
+	margin: 0 auto; /* centers the div */
+	width: 450px;
+}
+
 .blurb {
-	padding-top: 8em;
-	width: 600px;
 	text-align: center;
 }
 
 p {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size: 1.1em;
+	font-size: 1.15em;
 	font-weight: 200;
-	color: #000;
+	color: #462540;;
 }
 
 img {
@@ -95,8 +97,9 @@ img {
 				Drawing & Painting
 ------------------------------------------- */
 
-.drawing-container {
-	padding: 18em 0 5em 0;
+.drawing-container,
+.painting-container {
+	padding: 5em 0 5em 0;
 }
 
 .lcohen-image,
@@ -106,6 +109,6 @@ img {
 }
 
 .desc-container {
-	color: #000;
+	color: #462540;;
 	padding: 2em;
 }
