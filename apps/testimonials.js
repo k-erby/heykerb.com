@@ -4,8 +4,8 @@
  */
 testimonials = [
     {
-      quote:  'You\'re an okay friend, I guess.',
-      person: 'Heather MacPhail'
+      quote:  'Yeah, I met her once. She real.',
+      person: 'Dominique Charlebois'
     }, {
       quote:  'You are such a wonderful, funny, caring, bubbly, talented & adorable person. You are honestly life goals.',
       person: 'Previous Student'
