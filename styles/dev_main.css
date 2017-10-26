@@ -4,51 +4,6 @@
 	--------------------------------------			   
 ------------------------------------------- */
 
-
-
-
-/* -------------------------------------------
-				Flexbox Basics
-------------------------------------------- */
-* {
-	margin: 0;
-	padding: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-.flex {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-}
-
-._space-between {
-	justify-content: space-between;
-}
-
-._direction-column {
-	-webkit-flex-direction: column;
-	flex-direction: column;
-}
-
-._direction-row {
-	-webkit-flex-direction: row;
-	flex-direction: row;
-}
-
-._justify-center {
-	justify-content: center;
-}
-
-.flexbox-row {
-	display: flex;
-	height: 100%;
-}
-
 .container {
 	margin: 0 auto;
 	padding: 0 20px;
@@ -66,6 +21,7 @@ body {
 	height: 100%;
 	width: 100%;
 	font-family: 'Playfair Display', serif;
+	color: #FFF;
 }
 
 #grad {
@@ -78,10 +34,6 @@ body {
 	background-blend-mode: multiply;
 }
 
-p {
-	color: #faf5e7;
-}
-
 mark {
 	color: #EBC36D;
 	background-color: transparent;
@@ -91,7 +43,8 @@ mark {
 			Header and Nav Bar 
 ------------------------------------------- */
 header {
-	font-family: 'Raleway', 300;
+	font-family: 'Raleway';
+	font-weight: 300;
 	padding: 2em 0;
 	font-size: 1.2em;
 	color: #FFF;
@@ -105,7 +58,6 @@ header a {
 	color: #FFF;
 }
 
-/* added hover effects from footer here */
 header a:hover {
 	text-decoration: line-through;
 	cursor: pointer;
@@ -114,7 +66,6 @@ header a:hover {
 
 header span {
 	letter-spacing: 1px;
-	color: #FFF;
 	font-weight: 600;
 }
 
