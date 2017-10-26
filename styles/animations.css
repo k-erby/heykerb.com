@@ -1,23 +1,138 @@
+/*      Fadeup Animation (Long)   */
 @-webkit-keyframes fadeup {
-    0%     { opacity: 0; -webkit-transform: translate(0px, 20px);}
+    0%     { opacity: 0; -webkit-transform: translate(0px, 40px);}
 }
 
 @-moz-keyframes fadeup {
-    0%     { opacity: 0; -moz-transform: translate(0px, 20px);}
+    0%     { opacity: 0; -moz-transform: translate(0px, 40px);}
 }
 
 @keyframes fadeup {
+    0%    { opacity: 0; transform: translate(0px, 40px);}
+}
+
+/*      Fadeup Animation (Short)   */
+@-webkit-keyframes fadeupS {
+    0%     { opacity: 0; -webkit-transform: translate(0px, 20px);}
+}
+
+@-moz-keyframes fadeupS {
+    0%     { opacity: 0; -moz-transform: translate(0px, 20px);}
+}
+
+@keyframes fadeupS {
     0%    { opacity: 0; transform: translate(0px, 20px);}
 }
 
+/*      Fadedown Animation     */
+@-webkit-keyframes fadedown {
+    0%     { opacity: 0; -webkit-transform: translate(0px, -40px);}
+}
+
+@-moz-keyframes fadedown {
+    0%     { opacity: 0; -moz-transform: translate(0px, -40px);}
+}
+
+@keyframes fadedown {
+    0%    { opacity: 0; transform: translate(0px, -40px);}
+}
+
+/*      Fadein Animation     */
 @keyframes grow {
     0% { transform: scale(1); }
     50% { transform: scale(1.03); }
     100% { transform: scale(1); }
 }
 
+@-moz-keyframes grow {
+    0% { -moz-transform: scale(1); }
+    50% { -moz-transform: scale(1.03); }
+    100% { -moz-transform: scale(1); }
+}
+
+@-webkit-keyframes grow {
+    0% { -webkit-transform: scale(1); }
+    50% { -webkit-transform: scale(1.03); }
+    100% { -webkit-transform: scale(1); }
+}
+
+
+/*      Fadein Animation     */
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/*                                 */
+/*       CSS classes and IDs       */
+/*                                 */
 .dev-website:hover,
 .art-website:hover {
+    -webkit-animation: grow 1.5s ease-in-out; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: grow 1.5s ease-in-out; /* Firefox < 16 */
+    -ms-animation: grow 1.5s ease-in-out; /* Internet Explorer */
+    -o-animation: grow 1.5s ease-in-out; /* Opera < 12.1 */
     animation: grow 1.5s ease-in-out;
     animation-fill-mode: forwards;
+}
+
+.hero-container {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+
+.art-header {
+    -webkit-animation: fadeup 1.7s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeup 1.7s; /* Firefox < 16 */
+    -ms-animation: fadeup 1.7s; /* Internet Explorer */
+    -o-animation: fadeup 1.7s; /* Opera < 12.1 */
+    animation: fadeup 1.7s;
+}
+
+.code-title, .code-para,
+.art-title, .art-para {
+    -webkit-animation: fadeup 1.7s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeup 1.7s; /* Firefox < 16 */
+    -ms-animation: fadeup 1.7s; /* Internet Explorer */
+    -o-animation: fadeup 1.7s; /* Opera < 12.1 */
+    animation: fadeup 1.7s;
+}
+
+.dev-main {
+    -webkit-animation: fadeupS 1.5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeupS 1.5s; /* Firefox < 16 */
+    -ms-animation: fadeupS 1.5s; /* Internet Explorer */
+    -o-animation: fadeupS 1.5s; /* Opera < 12.1 */
+    animation: fadeupS 1.5s;
+}
+
+.plzwork {
+    -webkit-animation: fadedown 1.7s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadedown 1.7s; /* Firefox < 16 */
+    -ms-animation: fadedown 1.7s; /* Internet Explorer */
+    -o-animation: fadedown 1.7s; /* Opera < 12.1 */
+    animation: fadedown 1.7s;
 }
