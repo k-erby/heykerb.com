@@ -83,6 +83,9 @@
     to   { opacity: 1; }
 }
 
+/*                                 */
+/*       CSS classes and IDs       */
+/*                                 */
 .dev-website:hover,
 .art-website:hover {
     -webkit-animation: grow 1.5s ease-in-out; /* Safari, Chrome and Opera > 12.1 */
