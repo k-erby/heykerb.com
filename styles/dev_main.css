@@ -39,6 +39,10 @@ mark {
 	background-color: transparent;
 }
 
+p {
+	line-height: 1.5em;
+}
+
 /* -------------------------------------------
 			Header and Nav Bar 
 ------------------------------------------- */
@@ -64,7 +68,6 @@ header a:hover {
 }
 
 header span {
-	letter-spacing: 1px;
 	font-weight: 600;
 }
 
@@ -73,13 +76,11 @@ h1 {
 	max-width: 600px;
 	line-height: 1.5;
 	font-size: 2.3em;
-	font-weight: 600;
-	color: #faf5e7;
 }
 
 #hidden_link {
 	text-decoration: none;
-	color: #faf5e7;
+	color: #FFF;
 	cursor: help;
 }
 
@@ -89,10 +90,8 @@ h1 {
 .question-container {
 	margin-top: 2em;
 	padding-top: 100px;
-	flex-wrap: wrap;
 	width: 400px;
 	position: relative;
-	text-align: center;
 }
 
 .first-section {
@@ -129,29 +128,20 @@ h1 {
 /* -------------------------------------------
 	   About Container & Work Container 
 ------------------------------------------- */
-.personal-info {
-	line-height: 1.5em;
-}
-
 .work-container {
 	padding-top: 100px;
-	margin: 0;
-	list-style: none;
 	justify-content: space-around;
 }
 
 h2 {
 	padding: 40px 0px 20px 0px;
-	justify-content: right;
 	font-family: 'Raleway';
-	color: #faf5e7;
+	color: #FFF;
     font-size: 20px;
-    font-weight: 500;
 }
 
 .work-container p {
     padding: 15px 0 150px 0;
-	line-height: 1.8;
 	text-align: justify; 
 	text-justify: auto;
 	width: auto;
@@ -166,7 +156,6 @@ h2 {
 }
 
 #testimonial-text {
-	line-height: 1.2em;
 	padding: 10px 0;
 	text-align: center;
 }
@@ -188,9 +177,8 @@ h2 {
 }
 
 .button:hover{
-	border: 1px solid #EBC36D;
+	border: 1.3px solid #EBC36D;
 	background-color: transparent;
-	box-shadow: 2px 1px #EBC36D;
 }
 
 /* -------------------------------------------
@@ -198,9 +186,8 @@ h2 {
 ------------------------------------------- */
 .footer {
 	padding-top: 13em;
-	position: block;
-	clear: both;
 	justify-content: space-between;
+	overflow: hidden;
 }
 
 #map {
@@ -212,10 +199,8 @@ h2 {
 
 	opacity: 0.9;
 	border-style: solid;
-	border-color: #faf5e7;
+	border-color: #FFF;
 	border-width: medium;
-
-	overflow: hidden;
 }
 
 .jodie-foster-others,
@@ -268,9 +253,7 @@ h2 {
 	.work-container h2 { padding-top: 1px; }
 	
 	.personal-info {
-		line-height: 1.7em;
-		text-align: justify;
-		text-justify: kashida;
+		line-height: 1.43em;
 	}
 
 	.first-section {
