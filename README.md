@@ -27,10 +27,10 @@ git push origin myUserName-featureName
 Now you submit a **pull request**! You may also want to destroy your branch if you're done working on the feature you were implementing.
 
 # To Dos
-HIGH severity should be done asap. MEDIUM is something I should do. LOW is
+HIGH severity should be done asap. MEDIUM is something I should do. LOW is not needed but nice.
 ## Main
 - ~~make the image load faster~~
-  - compressed image - could make it compress it more. Still some lag, but LOW seeverity
+  - compressed image - could make it compress it more. Still some lag, but LOW severity
 - **@media query**: change so CODE and ART are in columns not rows
 
 ## Dev Side
