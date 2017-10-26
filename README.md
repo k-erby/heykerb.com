@@ -1,5 +1,5 @@
 # heykerb.com
-It's my personal website. Currently it's under construction.
+Hey, it's a personal website.
 
 # Reminders of github basics
 
@@ -27,16 +27,25 @@ git push origin myUserName-featureName
 Now you submit a **pull request**! You may also want to destroy your branch if you're done working on the feature you were implementing.
 
 # To Dos
+## Main
+- make the image look faster
+- **@media query**: change so CODE and ART are in columns not rows
+
 ## Dev Side
 - add work section
+- seriously, make the image load faster
 - double check (and add more) media queries
 - fix the weird p --> a (column --> row) bug that occurs.
 - **clean up the css**
 
 ## Art Side
+- add https://sorgalla.com/lity/
 - add drawing section
 - add painting section
 - add music section
 - add an mp3 of my singing
 - **media queries**
 - **clean up the css**
+
+## Misc
+- .htaccess stuff
