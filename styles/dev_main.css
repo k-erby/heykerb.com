@@ -157,13 +157,6 @@ h2 {
 	width: auto;
 }
 
-#quotation-marks {
-	width: 100vw;
-	opacity: 0.3;
-	filter: blur(3px);
-	margin-bottom: -6em;
-}
-
 .claims {
 	width: 600px;
 	height: 300px;
@@ -228,6 +221,10 @@ h2 {
 .jodie-foster-others,
 .jodie-foster-me {
 	padding-bottom: 2em;
+}
+
+.jodie-foster-me p {
+	text-align: left;
 }
 
 .jodie-foster-others a {
@@ -306,12 +303,6 @@ h2 {
 	.question-container .erb {
 		top: 3em;
 		left: -2em;
-	}
-
-	#quotation-marks {
-		opacity: 0.4;
-		filter: blur(2px);
-		margin-bottom: -2.4em;
 	}
 
 	.claims {
