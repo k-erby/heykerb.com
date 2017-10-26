@@ -27,24 +27,41 @@ git push origin myUserName-featureName
 Now you submit a **pull request**! You may also want to destroy your branch if you're done working on the feature you were implementing.
 
 # To Dos
+HIGH severity should be done asap. MEDIUM is something I should do. LOW is
 ## Main
-- make the image look faster
+- ~~make the image load faster~~
+  - compressed image - could make it compress it more. Still some lag, but LOW seeverity
 - **@media query**: change so CODE and ART are in columns not rows
 
 ## Dev Side
+#### HIGH
 - add work section
+- check its browser-friendliness
+
+#### MEDIUM
 - seriously, make the image load faster
-- double check (and add more) media queries
+  - compressed it but it still takes forever to load. Moved severity down.
+- double check media queries look good
 - fix the weird p --> a (column --> row) bug that occurs.
-- **clean up the css**
+
+#### LOW
+- clean up css 
+  - did round 1, but will need to recurse on it.
 
 ## Art Side
-- add https://sorgalla.com/lity/
-- add drawing section
-- add painting section
+#### HIGH
+- ~~add drawing section~~
+  - added a drawing - flesh out with more.
+- ~~add painting section~~
+  - added a painting - flesh out with more.
 - add music section
-- add an mp3 of my singing
 - **media queries**
+
+#### MEDIUM
+- add https://sorgalla.com/lity/ (lightbox for images)
+
+#### LOW
+- add an mp3 of singing/guitar/whatever
 - **clean up the css**
 
 ## Misc
