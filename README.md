@@ -62,6 +62,7 @@ HIGH severity should be done asap. MEDIUM is something I should do. LOW is not n
 
 #### LOW
 - add an mp3 of singing/guitar/whatever
+- geomertric svgs that spin for some seconds (on scroll)
 - **clean up the css**
 
 ## Misc
