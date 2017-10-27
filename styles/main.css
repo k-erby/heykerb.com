@@ -96,6 +96,7 @@ strong {
 .art-title, .art-para {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	color: #462540;
+	align-items: baseline;
 }
 
 .art-para {
@@ -117,5 +118,9 @@ strong {
 
 	.code-title, .art-title {
 		font-size: 3em;
+	}
+
+	.code-title, .art-title {
+		margin: 0.1em;
 	}
 }
