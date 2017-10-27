@@ -112,15 +112,15 @@ strong {
 }
 
 @media (max-width: 500px) {
-	.art-para, .code-para {
-		visibility: hidden;
-	}
-
 	.code-title, .art-title {
 		font-size: 3em;
 	}
 
-	.code-title, .art-title {
+	.art-title {
 		margin: 0.1em;
+	}
+
+	.art-para, .code-para {
+		padding: 0 0.5em;
 	}
 }
