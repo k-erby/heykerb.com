@@ -70,7 +70,7 @@ h1 {
 	width: 450px;
 }
 
-.blurb {
+.about-me {
 	text-align: center;
 }
 
@@ -88,6 +88,7 @@ img {
 
 .work-container {
 	margin: 0 15em 0 15em;
+	width: auto;
 }
 
 /* -------------------------------------------
@@ -103,9 +104,23 @@ img {
 .sparrow-image {
 	width: 350px;
 	height: auto;
+	padding-left: 2em;
+}
+
+.old-painting-image {
+	height: 170px;
+	width: auto;
+	padding: 0 2em;
 }
 
 .desc-container {
-	color: #462540;;
-	padding: 2em;
+	color: #462540;
+	align-items: flex-start;
+	padding: 2em 2em;
+}
+
+@media (max-width: 700px) {
+	.plzwork {
+		width: auto;
+	}
 }
