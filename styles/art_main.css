@@ -17,7 +17,7 @@
 				Nav and Hero
 ------------------------------------------- */
 body {
-	color: #000;
+	color: #462540;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -42,35 +42,31 @@ header a:hover {
 	cursor: pointer;
 }
 
-header span {
-	letter-spacing: 1px;
-	color: #462540;
-	font-weight: 600;
-}
-
 .hero-container {
-	align-content: center;
+	align-items: center;
+	position: relative;
+	margin: 0 auto;
+	height: 400px;
+	width: auto;
+	margin-top: 4em;
 	text-align: center;
-	width: 100%;
-	height: 100%;
 }
 
-h1 {
-	font-family: 'Yanone Kaffeesatz', sans-serif;
+.name {
+	align-self: center;
 	font-size: 6.4em;
 	font-weight: 200;
-	color: #462540;
-	margin-top: -3.2em;
+	
+	position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .plzwork {
-	padding: 10em 0 10em 0;
 	font-size: 1.15em;
 	margin: 0 auto; /* centers the div */
 	width: 450px;
-}
-
-.about-me {
 	text-align: center;
 }
 
@@ -81,13 +77,8 @@ p {
 	color: #462540;;
 }
 
-img {
-	width: 80vw;
-	height: 70vh;
-}
-
 .work-container {
-	margin: 0 15em 0 15em;
+	margin: 10em 5em;
 	width: auto;
 }
 
@@ -97,7 +88,7 @@ img {
 
 .drawing-container,
 .painting-container {
-	padding: 5em 0 5em 0;
+	padding: 0 0 5em 0;
 }
 
 .lcohen-image,
@@ -120,7 +111,7 @@ img {
 }
 
 @media (max-width: 700px) {
-	.plzwork {
-		width: auto;
-	}
+	.plzwork { width: auto; }
+	.name { font-size: 5em; }
+	.hero-container { overflow: hidden;}
 }

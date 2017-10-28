@@ -30,6 +30,10 @@
 	justify-content: space-between;
 }
 
+._space-around {
+	justify-content: space-around;
+}
+
 ._direction-column {
 	-webkit-flex-direction: column;
 	flex-direction: column;
@@ -63,7 +67,7 @@ strong {
 .dev-website {
     float: left;
     width: 50vw;
-    height: 100vh;
+	height: 100vh;
 
 	background: #462540;  /* if blend doesn't work */
 	background: -moz-linear-gradient(top, #462540 30%, #722F40 100%), url('/imgs/eyeSMALLER.png') repeat;
@@ -82,15 +86,15 @@ strong {
 }
 
 .code-title, .art-title {
-    text-align: center;
-    height: 50vh;
 	font-size: 4em;
-	padding-top: 4em;
+	align-items: baseline;
+	align-self: center;
 }
 
 .code-title, .code-para {
     font-family: 'Raleway', sans-serif;
 	color: #FFF;
+	align-items: baseline;
 }
 
 .art-title, .art-para {
@@ -99,23 +103,16 @@ strong {
 }
 
 .art-para {
-	font-size: 1.23em;
+	font-size: 1.13em;
 }
 
 .art-para, .code-para {
 	padding: 0 1em;
-	text-align: center;
-	position: relative;
-	align-items: center;
-	justify-content: center;
+	align-self: center;
 }
 
 @media (max-width: 500px) {
-	.art-para, .code-para {
-		visibility: hidden;
-	}
-
-	.code-title, .art-title {
-		font-size: 3em;
-	}
+	.code-title { font-size: 3em; }
+	.art-title { font-size: 3.05em; }
+	.art-para, .code-para { visibility: hidden; }
 }
