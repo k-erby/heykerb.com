@@ -13,40 +13,51 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <!-- FONT
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-    
     <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link rel="stylesheet" type="text/css" href="styles/animations.css">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
 
-    <!-- Favicon
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="/imgs/favicon.png">
-    
 </head>
 
 <!-- Basic Page Needs End
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <body>
-    <main class = "flex _direction-row" id="media-query-position">
-        <a class="dev-website flex _direction-column _space-around" href="/dev_index.html" target="_self" id="code_link">
-            <h1 class = "code-title title-details struct"> Code </h1>
-            <section class = "flex _direction-column">
-                <p class = "code-para">If I'm not doing art and designing things, I'm coding.</p>
-            </section>
-        </a>
+    <main class="main-container flex _justify-center" id="media-query-position">
 
-        <a class = "art-website flex _direction-column _space-around" href="/art_index.html" target="_self" id="code_link">
-            <h1 class = "art-title struct"> Art </h1>
-            <section class =  "flex _direction-column _justify-content">
-                <p class = "art-para">If I'm not coding, I'm doing art and designing things. </p>
+        <section class = "code-side-container">
+            <section class = "flex code-basics _direction-column">
+                <h1 class="code-title">code</h1>
+                <div class = "code-line"></div>
             </section>
-        </a>
+
+            <section class = "code-description-container flex _direction-column">
+                <p class = "code-description">if i’m not doing<br>art, i’m coding.</p>
+                
+                <aside class = "click-to-code flex _direction-row">
+                    <p class = "code-description">click <br>for code</p>
+                    <img src="./imgs/light_arrow.svg" class="img-light-arrow">
+                </aside>
+            </section>
+        </section>
+
+        <figure class = "ampersand">
+            <img src="./imgs/amp.svg" class="img-ampersand">
+        </figure>
+
+        <section class = "art-side-container">
+            <section class = "flex art-basics _direction-column">
+                <h1 class="art-title">art</h1>
+                <div class = "art-line"></div>
+            </section>
+
+            <section class = "art-description-container flex _direction-column">
+                    <p class = "art-description">if i’m not coding,<br>i'm doing art.</p>
+
+                    <aside class = "click-to-art flex _direction-row">
+                        <img src="./imgs/dark_arrow.svg" class="img-dark-arrow">
+                        <p class = "art-description art-right">click<br>for art</p>
+                    </aside>
+            </section>
+        </section>
 
     </main>
 </body>
