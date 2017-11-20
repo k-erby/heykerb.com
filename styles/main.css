@@ -57,7 +57,6 @@ body {
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    overflow: hidden;
 }
 
 .main-container {
@@ -201,7 +200,11 @@ body {
     .code-basics, .art-basics { width: 150px; padding-top: 15em;}
     .code-line, .art-line { width: 150px; }
     .code-title, .code-description { z-index: 1; }
-    .art-description, .code-description { font-size: 1em; }
+	.art-description, .code-description { font-size: 1em; }
+	
+	.art-description-container, .code-description-container {
+		padding: 0.5em 0;
+	}
 
     .img-ampersand { max-height: 300px; }
 }
