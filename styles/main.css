@@ -4,8 +4,7 @@
 	--------------------------------------			   
 ------------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
-@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 /* -------------------------------------------
 				Flexbox Basics
@@ -45,7 +44,9 @@
 }
 
 ._justify-center {
-	justify-content: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 /* -------------------------------------------
@@ -53,66 +54,154 @@
 ------------------------------------------- */
 body {
 	height: 100%;
-	width: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    overflow: hidden;
 }
 
-a {
-    text-decoration: none;
+.main-container {
+    position: relative;
 }
 
-strong {
-	margin: 2em;
-}
-
-.dev-website {
+.code-side-container {
     float: left;
     width: 50vw;
-	height: 100vh;
-
-	background: #462540;  /* if blend doesn't work */
-	background: -moz-linear-gradient(top, #462540 30%, #722F40 100%), url('/imgs/eyeSMALLER.png') repeat;
-	background: -webkit-linear-gradient(top, #462540 30%, #85092A 100%), url('/imgs/eyeSMALLER.png') repeat;
-	background: -o-linear-gradient(top, #462540 30%, #85092A 100%), url('/imgs/eyeSMALLER.png') repeat;
-	background: -ms-linear-gradient(top, #462540 30%, #85092A 100%), url('/imgs/eyeSMALLER.png') repeat;
-	background: linear-gradient(to bottom, #462540 30%, #85092A 100%), url('/imgs/eyeSMALLER.png') repeat;
-	background-blend-mode: multiply;
+    height: 100vh;
+    background-color: #242634;
 }
 
-.art-website {
-    float: right;
-    width: 50vw;
-	height: 100vh;
-	background: #FFF;
+.code-basics, .art-basics {
+    width: 525px;
+    padding-top: 10em;
+    z-index: 1;
 }
+
+.code-basics { float: right; }
+.art-basics { float: left; }
 
 .code-title, .art-title {
-	font-size: 4em;
-	align-items: baseline;
-	align-self: center;
+    font-size: 2.5em;
 }
 
-.code-title, .code-para {
-    font-family: 'Raleway', sans-serif;
-	color: #FFF;
-	align-items: baseline;
+.code-title {
+    color: #E8E8EA;
+    align-self: flex-start;
 }
 
-.art-title, .art-para {
-	font-family: 'Yanone Kaffeesatz', sans-serif;
-	color: #462540;
+.code-line, .art-line {
+    height: 3px;
+    width: 525px;
 }
 
-.art-para {
-	font-size: 1.13em;
+
+/*       Code-Side Specifics      */
+.code-line {
+    background-color: #E8E8EA;
+    z-index: 1;
 }
 
-.art-para, .code-para {
-	padding: 0 1em;
-	align-self: center;
+.code-description-container {
+    width: 41vw;
+    padding: 2.5em 0;
+    float: right;
 }
 
-@media (max-width: 500px) {
-	.code-title { font-size: 3em; }
-	.art-title { font-size: 3.05em; }
-	.art-para, .code-para { visibility: hidden; }
+.code-description {
+    color: #E8E8EA;
+    font-size: 1.15em;
+}
+
+.click-to-code {
+    position: relative;
+    padding-top: 18em;
+}
+
+.img-light-arrow {
+    position: absolute;
+    left: 58px;
+    bottom: 38px;
+    width: 100px;
+}
+
+
+/*       Art-Side Specifics      */
+.art-side-container {
+    float: right;
+    width: 50vw;
+    height: 100vh;
+    background-color: #E8E8EA;
+}
+
+.art-title {
+    color: #242634;
+    align-self: flex-end;
+}
+
+.art-line {
+    background-color: #242634;
+    float: left;
+}
+
+.art-description-container {
+    width: 41vw;
+    padding: 2.5em 0;
+    float: left;
+}
+
+.art-description {
+    color: #242634;
+    font-size: 1.15em;
+    text-align: right;
+    float: right;
+}
+
+.art-description.art-right {
+    position: absolute;
+    right: 0;
+}
+
+.click-to-art {
+    position: relative;
+    padding-top: 18em;
+}
+
+.img-dark-arrow {
+    position: absolute;
+    right: 48px;
+    bottom: -5px;
+    width: 103px;
+}
+
+/*       Ampersand Image      */
+.ampersand {
+    position: absolute;
+}
+
+.img-ampersand {
+    max-height: 580px;
+    max-width: auto;
+}
+
+
+/*       Media Queries     */
+@media (max-width: 1100px) {
+    .code-basics, .art-basics { width: 350px; }
+    .code-line, .art-line { width: 350px; }
+}
+
+@media (max-width: 850px) {
+    .code-basics, .art-basics { width: 250px; padding-top: 12.5em;}
+    .code-line, .art-line { width: 250px; }
+    .img-ampersand { max-height: 450px; }
+    .img-dark-arrow, .img-light-arrow {width: 50px;}
+}
+
+@media (max-width: 600px) {
+    .code-basics, .art-basics { width: 150px; padding-top: 15em;}
+    .code-line, .art-line { width: 150px; }
+    .code-title, .code-description { z-index: 1; }
+    .art-description, .code-description { font-size: 1em; }
+
+    .img-ampersand { max-height: 300px; }
 }
