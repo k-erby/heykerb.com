@@ -27,12 +27,18 @@ https://codepen.io/MasterChief/ */
 }
 
 ._direction-column {
+  -webkit-flex-direction: column;
 	flex-direction: column;
+}
+
+._direction-row {
+	-webkit-flex-direction: row;
+	flex-direction: row;
 }
 
 .container {
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 1.3em;
 	min-width: 300px;
 	max-width: 1000px;
 	animation: fadein 1.5s;
@@ -44,22 +50,24 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	height: 100%;
   width: 100%;
-  background-color: #242634;
+  background: #000;
+  overflow: hidden;
 }
 
-div {
-    height:100vh;
+.text-404 {
+  padding-top: 3em;
+  font-size: 3.8em;
 }
 
-  .glitch {
+.glitch {
     color: #E8E8EA;
-    padding-top: 15px;
+    padding-top: 5px;
     font-weight: 700;
-    font-size: 120px;
+    font-size: 3em;
     position: relative;
     width: 800px;
     margin: 0 auto;
-  }
+}
   
   @keyframes noise-anim {
     0% {
@@ -297,19 +305,19 @@ div {
   .glitch:before {
     content: attr(data-text);
     position: absolute;
-    left: -2px;
+    left: -1px;
     text-shadow: 3px 0 #0FEFEF;
-    top: 2px;
+    top: 1px;
     color: white;
     background: black;
     overflow: hidden;
-    clip: rect(0, 900px, 0, 0);
+    clip: rect(0, 800px, 0, 0);
     animation: noise-anim-2 3s infinite linear alternate-reverse;
   }
   
 
 
 @media (max-width: 500px) {
-	h1 { font-size: 20px;}
-	header { font-size: 15px;}
+  .page-not-found { font-size: 1.7em; }
+  .glitch { width: 300px; }
 }
