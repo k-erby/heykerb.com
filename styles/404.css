@@ -1,6 +1,16 @@
 /* Appreciatively taken from Quentin Luylier on Codepen and made more glitchy:
 https://codepen.io/MasterChief/ */
 
+/* -------------------------------------------
+	--------------------------------------
+            404 Page
+	--------------------------------------			   
+------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
+
+/* 404 page basics */
 * {
 	margin: 0;
 	padding: 0;
@@ -16,16 +26,8 @@ https://codepen.io/MasterChief/ */
 	display: -ms-flexbox;
 }
 
-._space-between {
-	justify-content: space-between;
-}
-
 ._direction-column {
 	flex-direction: column;
-}
-
-._justify-center {
-	justify-content: center;
 }
 
 .container {
@@ -33,24 +35,16 @@ https://codepen.io/MasterChief/ */
 	padding: 0 20px;
 	min-width: 300px;
 	max-width: 1000px;
-	animation: fadeup 1.5s;
-	-webkit-animation: fadeup 1.5s;
-	-moz-animation: fadeup 1.5s;
+	animation: fadein 1.5s;
+	-webkit-animation: fadein 1.5s;
+	-moz-animation: fadein 1.5s;
 }
 
 body {
-	font-family: 'Playfair Display', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	height: 100%;
-	width: 100%;
-}
-
-#grad {
-	background: -moz-linear-gradient(top, #462540 30%, #722F40 100%), url('/imgs/eye.png') repeat;
-	background: -webkit-linear-gradient(top, #462540 30%, #722F40 100%), url('/imgs/eye.png') repeat;
-	background: -o-linear-gradient(top, #462540 30%, #722F40 100%), url('/imgs/eye.png') repeat;
-	background: -ms-linear-gradient(top, #462540 30%, #722F40 100%), url('/imgs/eye.png') repeat;
-	background: linear-gradient(to bottom, #462540 30%, #85092A 100%), url('/imgs/eye.png') repeat;
-	background-blend-mode: multiply;
+  width: 100%;
+  background-color: #242634;
 }
 
 div {
@@ -58,8 +52,7 @@ div {
 }
 
   .glitch {
-    color: white;
-    font-family: 'Raleway', sans-serif;
+    color: #E8E8EA;
     padding-top: 15px;
     font-weight: 700;
     font-size: 120px;
