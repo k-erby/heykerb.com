@@ -112,8 +112,8 @@
     animation: fadeup 1.7s;
 }
 
-.code-title, .code-para,
-.art-title, .art-para {
+.code-title, .code-description,
+.art-title, .art-description {
     -webkit-animation: fadeup 1.7s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadeup 1.7s; /* Firefox < 16 */
     -ms-animation: fadeup 1.7s; /* Internet Explorer */
@@ -127,12 +127,4 @@
     -ms-animation: fadeupS 1.5s; /* Internet Explorer */
     -o-animation: fadeupS 1.5s; /* Opera < 12.1 */
     animation: fadeupS 1.5s;
-}
-
-.plzwork {
-    -webkit-animation: fadedown 1.7s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadedown 1.7s; /* Firefox < 16 */
-    -ms-animation: fadedown 1.7s; /* Internet Explorer */
-    -o-animation: fadedown 1.7s; /* Opera < 12.1 */
-    animation: fadedown 1.7s;
 }

@@ -53,11 +53,14 @@
 				Main Container 
 ------------------------------------------- */
 body {
-	height: 100%;
-    width: 100%;
-	font-family: 'Montserrat', sans-serif;
-	overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    height: 100%;
+    width: 100%;
+}
+
+.main-index-body {
+	overflow: hidden;
 }
 
 .main-container {
@@ -90,7 +93,7 @@ body {
 }
 
 .code-line, .art-line {
-    height: 3px;
+    height: 4px;
     width: 525px;
 }
 
@@ -181,6 +184,15 @@ body {
 .img-ampersand {
     max-height: 580px;
     max-width: auto;
+    animation: fadein 1.5s;
+	-webkit-animation: fadein 1.5s;
+	-moz-animation: fadein 1.5s;
+}
+
+.link-underline-code {
+    text-decoration: none;
+    width: 80px;
+    border-bottom: 3px solid #7a1b2c;
 }
 
 

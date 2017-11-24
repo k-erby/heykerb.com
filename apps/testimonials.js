@@ -13,7 +13,10 @@ testimonials = [
       quote:  'You know, Kaitlin. I\'ve had a lot of instructors that were liquid. A lot that were gas. But you\'re the first one that\'s solid.',
       person: 'Previous Student'
     }, {
-      quote:  'You are an amazing teacher and an even better person (which is saying a lot considering you are a pretty goddamn fabulous teacher). ... I hope to be as inspiring and amazing as you one day.',
+      quote:  'You are an amazing teacher and an even better person (which is saying a lot considering you are a pretty goddamn fabulous teacher).',
+      person: 'Previous Student'
+    }, {
+      quote: 'I hope to be as inspiring and amazing as you one day.',
       person: 'Previous Student'
     }, {
       quote:  'Kaitlin\'s willingness to accept constructive criticism and to work towards the high standards she sets for herself have resulted in signifigant growth.',
@@ -21,6 +24,9 @@ testimonials = [
     }, {
       quote:  'Kaitlin\'s positive, caring nature; strong organizational skills; exemplary work ethic; ... and, her broad knowledge base, particulary in the visual arts have resulted in an outstanding practicum.',
       person: 'Final practicum report, Regan Rasmussen, Moira Raynor-Atterbury & Meghan McMillan'
+    }, {
+      quote:  'There should be more you\'s in the world',
+      person: 'Jonathan Bezeau'
     }
   ];
   
