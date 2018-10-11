@@ -1,4 +1,11 @@
-# OS generated files #
-######################
+#############################
+ 	 .gitignore
+#############################
+
+# OS generated files
 .DS_Store
 .DS_Store?
+
+# Editor Specific
+.idea
+

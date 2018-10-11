@@ -59,11 +59,11 @@ body {
     width: 100%;
 }
 
-.main-index-body {
+.main {
 	overflow: hidden;
 }
 
-.main-container {
+.main_container {
     position: relative;
 }
 
