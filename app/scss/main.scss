@@ -23,7 +23,7 @@ body {
 @mixin container {
     width: 50vw;
     height: 100vh;
-    padding-top: 10em;
+    padding-top: 12em;
 }
 
 @mixin title-line {
@@ -63,7 +63,7 @@ body {
 }
 
 .code-description {
-    color: #E8E8EA;
+    color: $brand-off-white;
     font-size: 1.15em;
 }
 
@@ -75,7 +75,7 @@ body {
 }
 
 .art-title {
-    color: #242634;
+    color: $brand-navy;
     align-self: flex-end;
 }
 
@@ -111,16 +111,6 @@ body {
 .img-ampersand {
     max-height: 580px;
     max-width: auto;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    animation: grow 1.5s;
-	-webkit-animation: grow 1.5s;
-	-moz-animation: grow 1.5s;
 }
 
 /*       Media Queries     */
