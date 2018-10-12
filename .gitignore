@@ -9,3 +9,6 @@
 # Editor Specific
 .idea
 
+# Node
+node_modules/
+

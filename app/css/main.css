@@ -1,0 +1,160 @@
+/* -------------------------------------------
+	--------------------------------------
+				Main index
+	--------------------------------------			   
+------------------------------------------- */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+/* -------------------------------------------
+				Main Container 
+------------------------------------------- */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  height: 100%;
+  width: 100%; }
+
+.main {
+  position: relative; }
+
+.code_container {
+  float: left;
+  background-color: #242634;
+  width: 50vw;
+  height: 100vh;
+  padding-top: 10em; }
+
+.code-basics {
+  float: right; }
+
+.art-basics {
+  float: left; }
+
+.code-title, .art-title {
+  font-size: 2.5em; }
+
+.code-title {
+  color: #E8E8EA;
+  align-self: flex-start; }
+
+/*       Code-Side Specifics      */
+.code-line {
+  background-color: #E8E8EA;
+  z-index: 1;
+  height: 5px;
+  width: 525px; }
+
+.code-description-container {
+  width: 41vw;
+  padding: 2.5em 0;
+  float: right; }
+
+.code-description {
+  color: #E8E8EA;
+  font-size: 1.15em; }
+
+.click-to-code {
+  position: relative;
+  padding-top: 18em; }
+
+.img-light-arrow {
+  position: absolute;
+  left: 58px;
+  bottom: 38px;
+  width: 100px; }
+
+/*       Art-Side Specifics      */
+.art_container {
+  float: right;
+  background-color: #E8E8EA;
+  width: 50vw;
+  height: 100vh;
+  padding-top: 10em; }
+
+.art-title {
+  color: #242634;
+  align-self: flex-end; }
+
+.art-line {
+  background-color: #242634;
+  float: left;
+  height: 5px;
+  width: 525px; }
+
+.art-description-container {
+  width: 41vw;
+  padding: 2.5em 0;
+  float: left; }
+
+.art-description {
+  color: #242634;
+  font-size: 1.15em;
+  text-align: right;
+  float: right; }
+
+.art-description.art-right {
+  position: absolute;
+  right: 0; }
+
+.click-to-art {
+  position: relative;
+  padding-top: 18em; }
+
+.img-dark-arrow {
+  position: absolute;
+  right: 48px;
+  bottom: -5px;
+  width: 103px; }
+
+/*       Ampersand Image      */
+.ampersand {
+  position: absolute; }
+
+.img-ampersand {
+  max-height: 580px;
+  max-width: auto;
+  animation: fadein 1.5s;
+  -webkit-animation: fadein 1.5s;
+  -moz-animation: fadein 1.5s; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  animation: grow 1.5s;
+  -webkit-animation: grow 1.5s;
+  -moz-animation: grow 1.5s; }
+
+/*       Media Queries     */
+@media (max-width: 1100px) {
+  .code-basics, .art-basics {
+    width: 350px; }
+  .code-line, .art-line {
+    width: 350px; } }
+
+@media (max-width: 850px) {
+  .code-basics, .art-basics {
+    width: 250px;
+    padding-top: 12.5em; }
+  .code-line, .art-line {
+    width: 250px; }
+  .img-ampersand {
+    max-height: 450px; }
+  .img-dark-arrow, .img-light-arrow {
+    width: 50px; } }
+
+@media (max-width: 600px) {
+  .code-basics, .art-basics {
+    width: 150px;
+    padding-top: 15em; }
+  .code-line, .art-line {
+    width: 150px; }
+  .code-title, .code-description, .img-light-arrow {
+    z-index: 1; }
+  .art-description, .code-description {
+    font-size: 1em; }
+  .art-description-container, .code-description-container {
+    padding: 2em 0; }
+  .click-to-code, .click-to-art {
+    padding-top: 8em; }
+  .img-ampersand {
+    max-height: 300px; } }

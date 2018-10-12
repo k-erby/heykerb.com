@@ -86,32 +86,6 @@
 /*                                 */
 /*       CSS classes and IDs       */
 /*                                 */
-.dev-website:hover,
-.art-website:hover {
-    -webkit-animation: grow 1.5s ease-in-out; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: grow 1.5s ease-in-out; /* Firefox < 16 */
-    -ms-animation: grow 1.5s ease-in-out; /* Internet Explorer */
-    -o-animation: grow 1.5s ease-in-out; /* Opera < 12.1 */
-    animation: grow 1.5s ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-.hero-container {
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-    -ms-animation: fadein 2s; /* Internet Explorer */
-    -o-animation: fadein 2s; /* Opera < 12.1 */
-    animation: fadein 2s;
-}
-
-.art-header {
-    -webkit-animation: fadeup 1.7s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadeup 1.7s; /* Firefox < 16 */
-    -ms-animation: fadeup 1.7s; /* Internet Explorer */
-    -o-animation: fadeup 1.7s; /* Opera < 12.1 */
-    animation: fadeup 1.7s;
-}
-
 .code-title, .code-description,
 .art-title, .art-description {
     -webkit-animation: fadeup 1.7s; /* Safari, Chrome and Opera > 12.1 */
@@ -119,12 +93,4 @@
     -ms-animation: fadeup 1.7s; /* Internet Explorer */
     -o-animation: fadeup 1.7s; /* Opera < 12.1 */
     animation: fadeup 1.7s;
-}
-
-.dev-main {
-    -webkit-animation: fadeupS 1.5s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadeupS 1.5s; /* Firefox < 16 */
-    -ms-animation: fadeupS 1.5s; /* Internet Explorer */
-    -o-animation: fadeupS 1.5s; /* Opera < 12.1 */
-    animation: fadeupS 1.5s;
 }

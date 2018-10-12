@@ -4,80 +4,37 @@
 	--------------------------------------			   
 ------------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-
-/* -------------------------------------------
-				Flexbox Basics
-------------------------------------------- */
-* {
-	margin: 0;
-	padding: 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-.flex {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-}
-
-._space-between {
-	justify-content: space-between;
-}
-
-._space-around {
-	justify-content: space-around;
-}
-
-._direction-column {
-	-webkit-flex-direction: column;
-	flex-direction: column;
-}
-
-._direction-row {
-	-webkit-flex-direction: row;
-	flex-direction: row;
-}
-
-._justify-center {
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
+@import "./branding.scss";
 
 /* -------------------------------------------
 				Main Container 
 ------------------------------------------- */
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $main-font;
     font-weight: 400;
     height: 100%;
     width: 100%;
 }
 
 .main {
-	overflow: hidden;
-}
-
-.main_container {
     position: relative;
 }
 
-.code-side-container {
-    float: left;
+@mixin container {
     width: 50vw;
     height: 100vh;
-    background-color: #242634;
+    padding-top: 10em;
 }
 
-.code-basics, .art-basics {
+@mixin title-line {
+    height: 5px;
     width: 525px;
-    padding-top: 10em;
-    z-index: 1;
+}
+
+.code_container {
+    float: left;
+    background-color: $brand-navy;
+    @include container;
 }
 
 .code-basics { float: right; }
@@ -92,16 +49,11 @@ body {
     align-self: flex-start;
 }
 
-.code-line, .art-line {
-    height: 4px;
-    width: 525px;
-}
-
-
 /*       Code-Side Specifics      */
 .code-line {
-    background-color: #E8E8EA;
+    background-color: $brand-off-white;
     z-index: 1;
+    @include title-line;
 }
 
 .code-description-container {
@@ -129,11 +81,10 @@ body {
 
 
 /*       Art-Side Specifics      */
-.art-side-container {
+.art_container {
     float: right;
-    width: 50vw;
-    height: 100vh;
-    background-color: #E8E8EA;
+    background-color: $brand-off-white;
+    @include container;
 }
 
 .art-title {
@@ -142,8 +93,9 @@ body {
 }
 
 .art-line {
-    background-color: #242634;
+    background-color: $brand-navy;
     float: left;
+    @include title-line;
 }
 
 .art-description-container {
@@ -153,7 +105,7 @@ body {
 }
 
 .art-description {
-    color: #242634;
+    color: $brand-navy;
     font-size: 1.15em;
     text-align: right;
     float: right;
