@@ -52,16 +52,6 @@ body {
   color: #E8E8EA;
   font-size: 1.15em; }
 
-.click-to-code {
-  position: relative;
-  padding-top: 18em; }
-
-.img-light-arrow {
-  position: absolute;
-  left: 58px;
-  bottom: 38px;
-  width: 100px; }
-
 /*       Art-Side Specifics      */
 .art_container {
   float: right;
@@ -94,16 +84,6 @@ body {
 .art-description.art-right {
   position: absolute;
   right: 0; }
-
-.click-to-art {
-  position: relative;
-  padding-top: 18em; }
-
-.img-dark-arrow {
-  position: absolute;
-  right: 48px;
-  bottom: -5px;
-  width: 103px; }
 
 /*       Ampersand Image      */
 .ampersand {
