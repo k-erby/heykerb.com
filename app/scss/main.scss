@@ -136,9 +136,6 @@ body {
 .img-ampersand {
     max-height: 580px;
     max-width: auto;
-    animation: fadein 1.5s;
-	-webkit-animation: fadein 1.5s;
-	-moz-animation: fadein 1.5s;
 }
 
 a {
@@ -158,25 +155,19 @@ a:hover {
 }
 
 @media (max-width: 850px) {
-    .code-basics, .art-basics { width: 250px; padding-top: 12.5em;}
+    .code-basics, .art-basics { width: 250px;}
     .code-line, .art-line { width: 250px; }
-    .img-ampersand { max-height: 450px; }
-    .img-dark-arrow, .img-light-arrow {width: 50px;}
+    .code-title, .code-description { z-index: 1; }
 }
 
 @media (max-width: 600px) {
-    .code-basics, .art-basics { width: 150px; padding-top: 15em;}
+    .code-basics, .art-basics { width: 150px;}
     .code-line, .art-line { width: 150px; }
-    .code-title, .code-description, .img-light-arrow { z-index: 1; }
+    .code-title, .code-description { z-index: 1; }
 	.art-description, .code-description { font-size: 1em; }
 	
 	.art-description-container, .code-description-container {
 		padding: 2em 0;
 	}
-
-	.click-to-code, .click-to-art {
-		padding-top: 8em;
-	}
-
     .img-ampersand { max-height: 300px; }
 }

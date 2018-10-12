@@ -15,8 +15,9 @@
   "bugs": {
     "url": "https://github.com/k-erby/heykerb.com/issues"
   },
-  "homepage": "https://github.com/k-erby/heykerb.com#readme",
+  "homepage": "https://github.com/k-erby/heykerb.com",
   "devDependencies": {
+    "browser-sync": "^2.26.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1"
   }
