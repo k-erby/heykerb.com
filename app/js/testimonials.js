@@ -10,7 +10,7 @@ testimonials = [
       quote:  'You are such a wonderful, funny, caring, bubbly, talented & adorable person. You are honestly life goals.',
       person: 'Previous Student'
     }, {
-      quote:  'You know, Kaitlin. I\'ve had a lot of instructors that were liquid. A lot that were gas. But you\'re the first one that\'s solid.',
+      quote:  'I\'ve had a lot of instructors that were liquid. A lot that were gas. But you\'re the first one that\'s solid.',
       person: 'Previous Student'
     }, {
       quote:  'You are an amazing teacher and an even better person (which is saying a lot considering you are a pretty goddamn fabulous teacher).',
@@ -29,34 +29,34 @@ testimonials = [
       person: 'Jonathan Bezeau'
     }
   ];
-  
-  /*
-   * update the HTML testimonial block
-   * 
-   * @param {string} testimonial.quote
-   * @param {string} testimonial.person
-   */
-  function updateTestimonial(testimonial) {
+
+/*
+* update the HTML testimonial block
+*
+* @param {string} testimonial.quote
+* @param {string} testimonial.person
+*/
+function updateTestimonial(testimonial) {
     document.getElementById('testimonial-text').innerHTML = '"' + testimonial.quote + '"';
     document.getElementById('testimonial-person').innerHTML = testimonial.person;
-  }
-  
-  /*
-   * load a random testimonial from the testimonials list
-   *  @param {MouseEvent} e - event object
-   */
-  function onGetTestimonialClick(e) {
-    if (e) { e.preventDefault(); }
+}
+
+/*
+* load a random testimonial from the testimonials list
+*  @param {MouseEvent} e - event object
+*/
+function onGetTestimonialClick(e) {
+    if (e) {
+        e.preventDefault();
+    }
     var randomNum = Math.floor(Math.random() * testimonials.length);
     updateTestimonial(testimonials[randomNum]);
-  }
-  
-  /*
-   * on page ready
-   */
-  document.addEventListener("DOMContentLoaded", function() {
+}
+
+/*
+* on page ready
+*/
+document.addEventListener("DOMContentLoaded", function() {
     // fire on get testimonal click to get the first testimonial
     onGetTestimonialClick();
-  });
-  
-  
+});

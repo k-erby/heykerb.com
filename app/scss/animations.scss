@@ -43,27 +43,3 @@
     }
 }
 
-/*                                 */
-/*       CSS classes and IDs       */
-/*                                 */
-.code-title, .code-description,
-.art-title, .art-description {
-    -webkit-animation: fadeup 1.7s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadeup 1.7s; /* Firefox < 16 */
-    -ms-animation: fadeup 1.7s; /* Internet Explorer */
-    -o-animation: fadeup 1.7s; /* Opera < 12.1 */
-    animation: fadeup 1.7s;
-}
-
-.amp path {
-    stroke-width: 0px;
-    stroke: $brand-red;
-    stroke-dasharray: 800;
-    stroke-dashoffset: 800;
-    fill: $brand-red;
-    fill-opacity: 0;
-    -moz-animation:DASH 2.5s ease-in-out 2.5s forwards;
-    -webkit-animation:DASH 2.5s ease-in-out 2.5s forwards;
-    animation:DASH 2.5s ease-in-out 2s forwards;
-    animation-delay: 1.3s;
-}

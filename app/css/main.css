@@ -1,127 +1,149 @@
-/* -------------------------------------------
-	--------------------------------------
-				Main index
-	--------------------------------------			   
-------------------------------------------- */
+/* ----------------------------------------------
+				   Main index
+---------------------------------------------- */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
-/* -------------------------------------------
-				Main Container 
-------------------------------------------- */
+/* ----------------------------------------------
+				  Main Container
+---------------------------------------------- */
 body {
+  -webkit-font-smoothing: antialiased;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   height: 100%;
   width: 100%; }
 
-.main {
-  position: relative; }
-
-.code_container {
-  float: left;
-  background-color: #242634;
-  width: 50vw;
-  height: 100vh;
-  padding-top: 11em; }
-
-.code-basics {
-  float: right; }
-
-.art-basics {
-  float: left; }
-
-.code-title, .art-title {
-  font-size: 2.5em; }
-
-.code-title {
-  color: #E8E8EA;
-  align-self: flex-start; }
-
-/*       Code-Side Specifics      */
-.code-line {
-  background-color: #E8E8EA;
+/* --- Sidebar ------------------------------- */
+#sidebar {
+  height: 100%;
+  position: fixed;
   z-index: 1;
-  height: 5px;
-  width: 525px; }
+  top: 65%;
+  left: -90px; }
 
-.code-description-container {
-  width: 41vw;
-  padding: 2.5em 0;
-  float: right; }
+#sidebar-links {
+  font-size: 1em;
+  transform: rotate(-90deg);
+  letter-spacing: 1px; }
 
-.code-description {
-  color: #E8E8EA;
-  font-size: 1.15em; }
+.red-bar {
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  background-color: #7B1B2C;
+  width: 3em;
+  height: 0.13em; }
 
-/*       Art-Side Specifics      */
-.art_container {
-  float: right;
-  background-color: #E8E8EA;
+/* --- Nav ------------------------------------ */
+.header {
+  position: fixed;
+  top: 2em;
+  right: 2em;
+  z-index: 1; }
+
+/* --- Hero ------------------------------- */
+a {
+  text-decoration: none;
+  padding: 0 0.5em;
+  font-weight: 500;
+  color: black; }
+
+a:hover {
+  color: #7B1B2C; }
+
+.bg-grey {
   width: 50vw;
-  height: 100vh;
-  padding-top: 11em; }
-
-.art-title {
-  color: #242634;
-  align-self: flex-end; }
-
-.art-line {
-  background-color: #242634;
-  float: left;
-  height: 5px;
-  width: 525px; }
-
-.art-description-container {
-  width: 41vw;
-  padding: 2.5em 0;
-  float: left; }
-
-.art-description {
-  color: #242634;
-  font-size: 1.15em;
-  text-align: right;
+  height: 550px;
+  background-color: #E8E8EA;
   float: right; }
 
-.art-description.art-right {
-  position: absolute;
-  right: 0; }
+.bg-img {
+  width: 40vw;
+  height: 370px;
+  position: relative;
+  top: 20vh;
+  left: -20vw; }
 
-/*       Ampersand Image      */
-.ampersand {
-  position: absolute; }
+.bg-arrow {
+  position: relative;
+  float: right;
+  height: 90px;
+  right: 13vw;
+  bottom: -80vh; }
 
-.img-ampersand {
-  max-height: 626px;
-  width: 100%; }
+.intro {
+  position: relative;
+  top: 3em;
+  left: 7em; }
 
-/*       Media Queries        */
-@media (max-width: 1100px) {
-  .code-basics, .art-basics {
-    width: 350px; }
-  .code-line, .art-line {
-    width: 350px; } }
+.name {
+  font-size: 2.7em;
+  padding: 3.5em 3em; }
 
-@media (max-width: 850px) {
-  .code-basics, .art-basics {
-    width: 250px; }
-  .code-line, .art-line {
-    width: 250px; }
-  .code-title, .code-description {
-    z-index: 1; } }
+.blurb {
+  max-width: 30rem;
+  text-align: center;
+  font-size: 1.1em; }
 
-@media (max-width: 600px) {
-  .code-basics, .art-basics {
-    width: 150px; }
-  .code-line, .art-line {
-    width: 150px; }
-  .code-title, .code-description, .art-description {
-    z-index: 1; }
-  .art-description, .code-description {
-    font-size: 1em; }
-  .art-description-container, .code-description-container {
-    padding: 2em 0; }
-  .img-ampersand {
-    max-height: 300px; } }
+/* --- Content ------------------------ */
+.content-divider {
+  padding: 5em 0; }
 
-@media (max-width: 320px) {
-  .img-ampersand {
-    max-height: 200px; } }
+.content {
+  width: 90vw;
+  padding: 2em 0; }
+
+.content-title {
+  padding-bottom: 1em; }
+
+.content.about-me {
+  height: 300px;
+  background-color: #E8E8EA; }
+
+.content-ramble {
+  text-align: center;
+  width: 60vw; }
+
+.content.projects {
+  padding: 5em 0; }
+
+.content-testimonials {
+  height: auto;
+  width: 80vw; }
+
+.shitty-drawing {
+  width: 180px;
+  position: relative;
+  top: 15vh;
+  left: 15vw; }
+
+.content.contact {
+  padding: 5em 0; }
+
+/* --- Testimonials ------------------------ */
+#testimonial-text {
+  text-align: center;
+  height: 100px;
+  width: 60vw; }
+
+#testimonial-person {
+  font-weight: 600; }
+
+.test-arrow-left {
+  transform: rotate(90deg); }
+
+.test-arrow-right {
+  transform: rotate(-90deg); }
+
+.quotes {
+  width: 90vw;
+  position: relative;
+  top: 13vh; }
+
+button {
+  border: none;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  padding: 3em; }

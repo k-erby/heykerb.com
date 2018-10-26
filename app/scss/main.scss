@@ -1,146 +1,191 @@
-/* -------------------------------------------
-	--------------------------------------
-				Main index
-	--------------------------------------			   
-------------------------------------------- */
+/* ----------------------------------------------
+				   Main index
+---------------------------------------------- */
 
 @import "./branding.scss";
 
-$break-sm: 320px;
-$break-md-sm: 600px;
-$break-md-lg: 850px;
-$break-lg: 1100px;
+/* ----------------------------------------------
+				  Main Container
+---------------------------------------------- */
 
-/* -------------------------------------------
-				Main Container 
-------------------------------------------- */
 body {
+    -webkit-font-smoothing: antialiased;
     font-family: $main-font;
-    font-weight: 400;
+    font-weight: 500;
     height: 100%;
     width: 100%;
 }
 
-.main {
-    position: relative;
-}
 
-@mixin container {
-    width: 50vw;
-    height: 100vh;
-    padding-top: 11em;
-}
+/* --- Sidebar ------------------------------- */
 
-@mixin title-line {
-    height: 5px;
-    width: 525px;
-}
-
-.code_container {
-    float: left;
-    background-color: $brand-navy;
-    @include container;
-}
-
-.code-basics { float: right; }
-.art-basics { float: left; }
-
-.code-title, .art-title {
-    font-size: 2.5em;
-}
-
-.code-title {
-    color: $brand-off-white;
-    align-self: flex-start;
-}
-
-/*       Code-Side Specifics      */
-.code-line {
-    background-color: $brand-off-white;
+#sidebar {
+    height: 100%;
+    position: fixed;
     z-index: 1;
-    @include title-line;
+    top: 65%;
+    left: -90px;
 }
 
-.code-description-container {
-    width: 41vw;
-    padding: 2.5em 0;
+#sidebar-links {
+    font-size: 1em;
+    transform: rotate(-90deg);
+    letter-spacing: 1px;
+}
+
+.red-bar {
+    display: inline-block;
+    position: relative;
+    top: -3px;
+    background-color: $brand-red;
+    width: 3em;
+    height: 0.13em;
+}
+
+
+/* --- Nav ------------------------------------ */
+
+.header {
+    position: fixed;
+    top: 2em;
+    right: 2em;
+    z-index: 1;
+}
+
+
+/* --- Hero ------------------------------- */
+
+
+a {
+    text-decoration: none;
+    padding: 0 0.5em;
+    font-weight: 500;
+    color: black;
+}
+
+a:hover {
+    color: $brand-red;
+}
+
+.bg-grey {
+    width: 50vw;
+    height: 550px;
+    background-color: $brand-grey;
     float: right;
 }
 
-.code-description {
-    color: $brand-off-white;
-    font-size: 1.15em;
+.bg-img {
+    width: 40vw;
+    height: 370px;
+    position: relative;
+    top: 20vh;
+    left: -20vw;
 }
 
-/*       Art-Side Specifics      */
-.art_container {
+.bg-arrow {
+    position: relative;
     float: right;
-    background-color: $brand-off-white;
-    @include container;
+    height: 90px;
+    right: 13vw;
+    bottom: -80vh;
+
 }
 
-.art-title {
-    color: $brand-navy;
-    align-self: flex-end;
+.intro {
+    position: relative;
+    top: 3em;
+    left: 7em;
 }
 
-.art-line {
-    background-color: $brand-navy;
-    float: left;
-    @include title-line;
+.name {
+    font-size: 2.7em;
+    padding: 3.5em 3em;
 }
 
-.art-description-container {
-    width: 41vw;
-    padding: 2.5em 0;
-    float: left;
+.blurb {
+    max-width: 30rem;
+    text-align: center;
+    font-size: 1.1em;
 }
 
-.art-description {
-    color: $brand-navy;
-    font-size: 1.15em;
-    text-align: right;
-    float: right;
+
+/* --- Content ------------------------ */
+
+.content-divider {
+    padding: 5em 0;
 }
 
-.art-description.art-right {
-    position: absolute;
-    right: 0;
+.content {
+    width: 90vw;
+    padding: 2em 0;
 }
 
-/*       Ampersand Image      */
-.ampersand {
-    position: absolute;
+.content-title {
+    padding-bottom: 1em;
 }
 
-.img-ampersand {
-    max-height: 626px;
-    width: 100%;
+.content.about-me {
+    height: 300px;
+    background-color: $brand-grey;
 }
 
-/*       Media Queries        */
-@media (max-width: $break-lg) {
-    .code-basics, .art-basics { width: 350px; }
-    .code-line, .art-line { width: 350px; }
+.content-ramble {
+    text-align: center;
+    width: 60vw;
 }
 
-@media (max-width: $break-md-lg) {
-    .code-basics, .art-basics { width: 250px;}
-    .code-line, .art-line { width: 250px; }
-    .code-title, .code-description { z-index: 1; }
+.content.projects {
+    padding: 5em 0;
 }
 
-@media (max-width: $break-md-sm) {
-    .code-basics, .art-basics { width: 150px;}
-    .code-line, .art-line { width: 150px; }
-    .code-title, .code-description, .art-description { z-index: 1; }
-	.art-description, .code-description { font-size: 1em; }
-	.art-description-container, .code-description-container {
-		padding: 2em 0;
-	}
-    .img-ampersand { max-height: 300px; }
+.content-testimonials {
+    height: auto;
+    width: 80vw;
 }
 
-@media (max-width: $break-sm) {
-    .img-ampersand { max-height: 200px; }
+.shitty-drawing {
+    width: 180px;
+    position: relative;
+    top: 15vh;
+    left: 15vw;
+}
+
+.content.contact {
+    padding: 5em 0;
+}
+
+/* --- Testimonials ------------------------ */
+
+#testimonial-text {
+    text-align: center;
+    height: 100px;
+    width: 60vw;
+}
+
+#testimonial-person {
+    font-weight: 600;
+}
+
+.test-arrow-left {
+    transform: rotate(90deg);
+}
+
+.test-arrow-right {
+    transform: rotate(-90deg);
+}
+
+.quotes {
+    width: 90vw;
+    position: relative;
+    top: 13vh;
+}
+
+button {
+    border: none;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    padding: 3em;
 }

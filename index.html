@@ -12,7 +12,8 @@
     <!-- Mobile Specific Metas
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <link rel = "shortcut icon" type="image/png" href="./app/images/circle.png"/>
+
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="./app/css/flex.css">
     <link rel="stylesheet" type="text/css" href="./app/css/main.css">
@@ -23,44 +24,98 @@
 <!-- Basic Page Needs End
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <body>
-    <main class="flex main _justify-center" id="media-query-position">
+<main id="media-query-position" class="hero">
+    <!-- Siderbar : name & links -->
+    <div id="sidebar">
+        <h4 id ="sidebar-links">
+            <a href="https://twitter.com/cmykaitlin/">kaitlin erb</a>
+            <span class="red-bar"></span>
+            <a href="https://www.linkedin.com/in/kaitlinerb/">li</a>
+            <a href="https://github.com/k-erby/">git</a>
+            <a href="https://www.instagram.com/licencetoshill/">insta</a>
+        </h4>
+    </div>
 
-        <!-- code side -->
-        <section class = "code_container">
-            <section class = "flex code-basics _direction-column">
-                <h1 class="code-title">code</h1>
-                <div class = "code-line"></div>
-            </section>
+    <!-- Header : nav bar -->
+    <header class="_direction-row _space-between header">
+        <nav>
+            <a href="#ABOUT">about</a>
+            <a href="#PROJECTS">projects</a>
+            <a href="#TESTIMONIALS">testimonials</a>
+            <a href="https://www.instagram.com/licencetoshill/">contact</a>
+        </nav>
+    </header>
 
-            <section class = "code-description-container flex _direction-column">
-                <p class = "code-description">if i’m not doing<br>art, i’m coding.</p>
-            </section>
+    <!-- UGH : stupid annoying graphic stupids -->
+    <div class = "bg-grey">
+        <img class="bg-img" src="./app/images/comp.svg" alt="Beep beep boop">
+        <img class="_direction-column _justify-right bg-arrow" src="./app/images/red_arrow.svg" alt="Go down!">
+    </div>
+
+    <!-- Intro : name & blurb -->
+    <section class = "_direction-column _justify-center intro">
+        <section class = "_direction-column _justify-right name">
+            <h1>kaitlin</h1>
+            <h1>erb</h1>
         </section>
-
-        <!-- middle side side -->
-        <figure class = "ampersand">
-            <svg class="img-ampersand" viewBox="0 0 616 726" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g class="amp" transform="translate(-126.000000, -248.000000)">
-                        <path d="M359.579937,963.904 C295.030281,963.904 240.032165,945.955513 194.583937,910.058 C149.13571,874.160487 126.411937,824.925646 126.411937,762.352 C126.411937,687.922295 180.422064,621.726956 288.443937,563.764 C261.438469,532.806512 242.501992,507.448099 231.633937,487.688 C220.765883,467.927901 215.331937,442.898818 215.331937,412.6 C215.331937,359.906403 234.76241,319.398808 273.623938,291.076 C312.485465,262.753192 358.262341,248.592 410.955938,248.592 C463.649534,248.592 508.43842,262.094532 545.323938,289.1 C582.209455,316.105468 600.651938,353.978423 600.651938,402.72 C600.651938,467.928326 547.959131,529.513044 442.571937,587.476 C495.265534,652.025656 538.078439,701.425162 571.011937,735.676 C591.430706,705.377182 607.238548,670.138868 618.435938,629.96 L699.451937,687.264 C682.326519,732.712227 662.896046,772.561162 641.159937,806.812 C667.506736,833.817468 701.0984,866.421142 741.935938,904.624 L667.835938,973.784 L576.939938,883.876 C518.976981,937.228267 446.524372,963.904 359.579937,963.904 Z M273.623938,839.91 C298.653396,858.682094 331.91573,868.068 373.411937,868.068 C414.908145,868.068 459.03837,848.966858 505.803937,810.764 C439.278272,740.944984 386.585465,682.324237 347.723937,634.9 C273.294232,675.078868 236.079937,719.209093 236.079937,767.292 C236.079937,796.932148 248.594479,821.137906 273.623938,839.91 Z M351.181938,357.272 C333.727184,371.104069 324.999937,387.241241 324.999937,405.684 C324.999937,424.126759 329.445893,440.757926 338.337937,455.578 C347.229982,470.398074 362.543829,490.981202 384.279937,517.328 C458.709643,480.442482 495.923937,446.192158 495.923937,414.576 C495.923937,388.229202 487.196691,368.634064 469.741938,355.79 C452.287184,342.945936 432.527381,336.524 410.461937,336.524 C388.396494,336.524 368.636691,343.439931 351.181938,357.272 Z"></path>
-                    </g>
-            </svg>
-        </figure>
-
-        <!-- art side -->
-        <section class = "art_container">
-            <section class = "flex art-basics _direction-column">
-                <h1 class="art-title">art</h1>
-                <div class = "art-line"></div>
-            </section>
-
-            <section class = "art-description-container flex _direction-column">
-                <p class = "art-description">if i’m not coding,<br>i'm doing art.</p>
-            </section>
+        <section class="_direction-column _justify-right">
+            <p class = "blurb">
+                My favourite chips are Ruffles Baked Cheddar & Sour Cream. Also, I like coding
+                and creating stupid things on the internet.
+            </p>
         </section>
-
-    </main>
-    <section class = "flex _justify-center about-me">
-
     </section>
+</main>
+<div class = "content-divider"></div>
+<img class="shitty-drawing" src="./app/images/slack_pic.svg" alt="Beep beep boop">
+<section class="_direction-column _justify-right">
+    <section class="_direction-row _space-between content about-me">
+        <div class = "flex _direction-column content _justify-center">
+            <h3 id="ABOUT" class="content-title">about</h3>
+            <p class="content-ramble">
+                I'm a developer based out of Victoria, BC. Most of the skills I have in life were because I
+                thought doing something would be funny. I enjoy failing fast, talking about those failures, and learning
+                from people much smarter than myself. Don't know what to say to me? Here are some things:
+                cats, craft beer labels, how much I hate that 'docker ps' shows containers and not
+                'docker containers' even though to show images you write 'docker images.'
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="_direction-column _justify-center content projects">
+        <h3 id="PROJECTS" class="content-title">projects</h3>
+        <p class="content-ramble">
+            <em>Coming soon.</em>
+        </p>
+    </section>
+
+    <!-- Testimonials -->
+    <img class="quotes" src="./app/images/quotes.svg">
+    <section class="_direction-row _justify-center _space-between content about-me">
+        <button onclick="onGetTestimonialClick(event)">
+            <img class="_direction-column _justify-right test-arrow-left"
+                 src="./app/images/red_arrow.svg">
+        </button>
+        <section class="_direction-column _justify-center">
+            <h3 id="TESTIMONIALS" class="content-title">testimonials</h3>
+            <p id="testimonial-text"></p>
+            <p id="testimonial-person"></p>
+        </section>
+        <button onclick="onGetTestimonialClick(event)">
+            <img class="_direction-column _justify-right test-arrow-right"
+                 src="./app/images/red_arrow.svg">
+        </button>
+    </section>
+
+    <!-- Contact -->
+    <section class="_direction-column _justify-center content contact">
+        <h3 id="CONTACT" class="content-title">contact</h3>
+        <p class="content-hello">
+            <em>cmykaitlin@gmail.com</em>
+        </p>
+    </section>
+</section>
+<script src="./app/js/testimonials.js"></script>
 </body>
 </html>
