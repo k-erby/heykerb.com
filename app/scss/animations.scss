@@ -1,24 +1,54 @@
 @import "./branding.scss";
 
-/*      Fadeup Animation (Long)   */
-@-webkit-keyframes fadeup {
-    0%     { opacity: 0; -webkit-transform: translate(0px, 40px);}
+// -----------------------------------------------------------
+//                          Mixins
+// -----------------------------------------------------------
+
+@mixin DASH-animation($num1, $num2) {
+    fill-opacity: 0;
+    -moz-animation:DASH $num1 ease-in-out $num2 forwards;
+    -webkit-animation:DASH $num1 ease-in-out $num2 forwards;
+    animation:DASH $num1 ease-in-out $num2 forwards;
 }
 
-@-moz-keyframes fadeup {
-    0%     { opacity: 0; -moz-transform: translate(0px, 40px);}
+@mixin FADEIN-animation($num1, $num2) {
+    -moz-animation:FADEIN $num1 linear $num2 forwards;
+    -webkit-animation:FADEIN $num1 linear $num2 forwards;
+    animation:FADEIN $num1 linear $num2 forwards;
 }
 
-@keyframes fadeup {
-    0%    { opacity: 0; transform: translate(0px, 40px);}
+@mixin BLINK-animation($num1, $num2) {
+    fill-opacity: 0;
+    -moz-animation:BLINK $num1 ease-in-out $num2 infinite;
+    -webkit-animation:BLINK $num1 ease-in-out $num2 infinite;
+    animation:BLINK $num1 ease-in-out $num2 infinite;
 }
+
+
+// -----------------------------------------------------------
+//                     Animated Elements
+// -----------------------------------------------------------
+
+.bg-img {
+    @include FADEIN-animation(1s, 1s);
+}
+
+.intro {
+    -webkit-animation: fadeup 1.7s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeup 1.7s; /* Firefox < 16 */
+    -ms-animation: fadeup 1.7s; /* Internet Explorer */
+    -o-animation: fadeup 1.7s; /* Opera < 12.1 */
+    animation: fadeup 1.7s;
+}
+
+
+// -----------------------------------------------------------
+//                     Keyframe Animations
+// -----------------------------------------------------------
 
 // Creates an outline stroke around svgs then filled them in
 @-webkit-keyframes DASH{
-    0% {
-        stroke-dashoffset:800;
-        stroke-width: 3px;
-    }
+    0% { stroke-dashoffset:800; }
     70% {
         stroke-dashoffset:0;
         fill-opacity:0;
@@ -29,10 +59,7 @@
     }
 }
 @-moz-keyframes DASH{
-    0% {
-        stroke-dashoffset:800;
-        stroke-width: 3px;
-    }
+    0% { stroke-dashoffset:800; }
     70% {
         stroke-dashoffset:0;
         fill-opacity:0;
@@ -43,3 +70,35 @@
     }
 }
 
+// Toggles opacity of svg elements
+@-webkit-keyframes BLINK {
+    0% { fill-opacity:0; }
+    50% { fill-opacity:1; }
+    100% { fill-opacity:0; }
+}
+@-moz-keyframes BLINK {
+    0% { fill-opacity:0; }
+    50% { fill-opacity:1; }
+    100% { fill-opacity:0; }
+}
+
+@-webkit-keyframes FADEIN {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes FADEIN{
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadeup {
+    0%     { opacity: 0; -webkit-transform: translate(0px, 60px);}
+}
+
+@-moz-keyframes fadeup {
+    0%     { opacity: 0; -moz-transform: translate(0px, 60px);}
+}
+
+@keyframes fadeup {
+    0%    { opacity: 0; transform: translate(0px, 60px);}
+}

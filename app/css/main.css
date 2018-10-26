@@ -61,7 +61,8 @@ a:hover {
   height: 370px;
   position: relative;
   top: 20vh;
-  left: -20vw; }
+  left: -20vw;
+  opacity: 0; }
 
 .bg-arrow {
   position: relative;
@@ -86,7 +87,7 @@ a:hover {
 
 /* --- Content ------------------------ */
 .content-divider {
-  padding: 5em 0; }
+  padding: 5em 5em; }
 
 .content {
   width: 90vw;
@@ -126,7 +127,9 @@ a:hover {
   width: 60vw; }
 
 #testimonial-person {
-  font-weight: 600; }
+  text-align: center;
+  font-weight: 600;
+  width: 60vw; }
 
 .test-arrow-left {
   transform: rotate(90deg); }
@@ -137,7 +140,8 @@ a:hover {
 .quotes {
   width: 90vw;
   position: relative;
-  top: 13vh; }
+  top: 13vh;
+  left: 2em; }
 
 button {
   border: none;
@@ -147,3 +151,26 @@ button {
   overflow: hidden;
   outline: none;
   padding: 3em; }
+
+/* --- Testimonials ------------------------ */
+@media (max-width: 700px) {
+  button, .bg-img, .bg-img, .shitty-drawing, #sidebar, .header {
+    display: none; }
+  .content-divider {
+    padding: 7em 7em; }
+  .content {
+    width: 100vw; }
+  .quotes {
+    width: 97vw;
+    position: relative;
+    top: 10vh;
+    left: -0.2em; }
+  .name {
+    position: relative;
+    padding: 2em 1em;
+    left: 0.1em; }
+  .content-ramble, .blurb, #testimonial-text {
+    font-size: 0.9em;
+    width: 80vw; }
+  #testimonial-person {
+    font-size: 0.7em; } }
