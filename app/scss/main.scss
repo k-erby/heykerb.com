@@ -88,7 +88,7 @@ a:hover {
     float: right;
     height: 90px;
     right: 13vw;
-    bottom: -80vh;
+    top: 80vh;
 }
 
 .intro {
@@ -199,6 +199,7 @@ button {
     button, .bg-img, .bg-img, .shitty-drawing, #sidebar, .header { display: none }
     .content-divider { padding: 7em 7em;}
     .content { width: 100vw; }
+    .bg-arrow { top: 63vh; }
     .quotes {
         width: 97vw;
         position: relative;
